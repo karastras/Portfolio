@@ -1,0 +1,80 @@
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+        &-picture{
+            animation: floating infinite 5s ease 3.5s;           
+        }
+        &-image{
+            width: 100px;
+            animation: transform;
+            transition: transform .5s;
+            &:hover{
+                transform: scale(1.2);
+            }
+            &--turn{
+                animation: turn .3s;
+                width: 100px;
+            }
+            &--unicorn{
+                width: 100px;
+                animation: enter 3s;
+                transition: transform .5s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        &-title{
+            font-size: 3rem;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+        &-nav{
+            display: flex;
+            flex-wrap: nowrap;
+            color: rgb(95, 87, 87);
+        }
+        &-link{
+            padding: 10px;
+            font-weight: bold;
+            transition: transform .5s, color .5s;
+            &:hover{
+                transform: scale(1.5) translateY(-2px);
+                color: white;
+            }
+        }
+}
+@keyframes turn {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes enter {
+    from {
+        opacity: 0;
+        transform: 
+            translateX(-300px)
+            translateY(500px)
+            scale(3)
+        ;}
+    to {
+        opacity: 1;
+        transform: 
+            translateX(0)
+            translateY(0)
+            scale(1);
+    }
+}
+@keyframes floating {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15px)
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
