@@ -38,7 +38,7 @@ const Header = () => {
         <div className="header">
             <div className={classNameContainer}>
 
-                <img className={className} src={picture} alt="" onClick={()=>{ toggle(); count();}} onAnimationEnd={()=> toggle()}  />
+                <img className={className} src={picture} alt="" onClick={()=>{ toggle(); count();}} onAnimationEnd={()=> toggle() }  />
             </div>
            
             <h1 className="header-title" >
