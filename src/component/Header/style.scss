@@ -1,8 +1,20 @@
 .header{
-    height: 10vh;
+    height: 15vh;
+    position: fixed;
+    width: 80%;
+    top: 0;
+    background-color: rgb(171, 185, 181);
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 3;
+    transition: ease .5s;
+        &-scrolling{
+            box-shadow: 0 0 10px rgba(0,0,0,1);
+            transition: ease 1s;
+            height: 10vh;
+
+        }
         &-picture{
             animation: floating infinite 5s ease 3.5s;           
         }
@@ -18,16 +30,18 @@
                 width: 100px;
             }
             &--unicorn{
+                z-index: 4;
                 width: 100px;
                 animation: enter 3s;
                 transition: transform .5s;
+                user-select: none; // fix blue-box issue when unicorn appears
                 &:hover{
                     transform: scale(1.2);
                 }
             }
         }
         &-title{
-            font-size: 3rem;
+            font-size: 2.2rem;
             font-weight: bold;
             color: rgb(0, 0, 0);
         }
@@ -46,6 +60,7 @@
             }
         }
 }
+
 @keyframes turn {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}

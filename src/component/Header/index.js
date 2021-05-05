@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import unicorn from '../../assets/unicorn.png'
 import star from '../../assets/star.png'
@@ -30,17 +30,24 @@ const Header = () => {
     let classNameContainer = ""
     if(className === 'header-image--unicorn') {
         classNameContainer = 'header-picture'
-    }
+    } 
+    
+    // function to change header style with scrolling
+    const [small, setSmall] = useState(false);
 
-    console.log(nClick)      
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+        window.addEventListener("scroll", () =>
+            setSmall(window.pageYOffset > 0)
+        );
+        }
+    }, []);
     
     return (
-        <div className="header">
+        <div className={`header ${small ? "header-scrolling" : "header"}`}>
             <div className={classNameContainer}>
-
-                <img className={className} src={picture} alt="" onClick={()=>{ toggle(); count();}} onAnimationEnd={()=> toggle() }  />
-            </div>
-           
+                <img className={className} src={picture} alt="" onClick={()=>{ toggle(); count();}} onAnimationEnd={()=> toggle()}  />
+            </div>           
             <h1 className="header-title" >
                 Jérôme Burrus Portfolio
             </h1>            
@@ -50,6 +57,7 @@ const Header = () => {
                 <li className="header-link">Projects</li>
                 <li className="header-link">About</li>
             </ul>            
+            
         </div>
     )
 }
