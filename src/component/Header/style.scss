@@ -1,22 +1,27 @@
 .header{
     height: 15vh;
     position: fixed;
-    width: 80%;
+    width: 100%;
     top: 0;
-    background-color: rgb(171, 185, 181);
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    background-color: rgb(171, 185, 181);    
     z-index: 3;
-    transition: ease .5s;
+    transition: ease-in .5s;
+        &-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+        }
         &-scrolling{
+            background-color: rgb(55, 141, 117);
             box-shadow: 0 0 10px rgba(0,0,0,1);
             transition: ease 1s;
             height: 10vh;
-
         }
         &-picture{
-            animation: floating infinite 5s ease 3.5s;           
+            animation: floating infinite 5s ease 3.5s;        
         }
         &-image{
             width: 100px;
@@ -57,6 +62,7 @@
             &:hover{
                 transform: scale(1.5) translateY(-2px);
                 color: white;
+                
             }
         }
 }

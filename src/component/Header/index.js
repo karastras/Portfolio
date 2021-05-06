@@ -10,9 +10,7 @@ let picture = star
 const Header = () => {
     //function to make a turn on image
     const [turn, setTurn] = useState(true)
-    const toggle = () => {
-        setTurn(!turn);
-    }
+    const toggle = () => {setTurn(!turn)}
     let className = 'header-image';
     if(!turn){ className = 'header-image--turn' }
 
@@ -45,19 +43,20 @@ const Header = () => {
     
     return (
         <div className={`header ${small ? "header-scrolling" : "header"}`}>
-            <div className={classNameContainer}>
-                <img className={className} src={picture} alt="" onClick={()=>{ toggle(); count();}} onAnimationEnd={()=> toggle()}  />
-            </div>           
-            <h1 className="header-title" >
-                Jérôme Burrus Portfolio
-            </h1>            
-            <ul className="header-nav" >
-                <li className="header-link">Accueil</li>
-                <li className="header-link">CV</li>
-                <li className="header-link">Projects</li>
-                <li className="header-link">About</li>
-            </ul>            
-            
+            <div className="header-container">
+                <div className={classNameContainer}>
+                    <img className={className} src={picture} alt="" onClick={()=>{ toggle(); count();}} onAnimationEnd={()=> toggle()}  />
+                </div>           
+                <h1 className="header-title" >
+                    Jérôme Burrus Portfolio
+                </h1>            
+                <ul className="header-nav" >
+                    <li className="header-link">Accueil</li>
+                    <li className="header-link">Parcours</li>
+                    <li className="header-link">Projets</li>
+                    <li className="header-link">A mon sujet</li>
+                </ul>            
+            </div>            
         </div>
     )
 }
