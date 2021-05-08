@@ -1,0 +1,73 @@
+.burger{    
+    &-nav{
+              
+    }    
+    //////////////////////// burger button///////////////////////////    
+    &-button{
+        height: 4rem;
+        width: 5rem;
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        justify-content: center;
+        color: white;
+        background-color: #83992b;        
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 0.7rem;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        box-shadow: black 0.1em 0.1em 0.2em;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 20;
+        display: none;
+    }
+    &-style{
+        margin: 0.25rem 0;
+        width: 2rem;
+        height: 0.25rem;
+        background-color: rgb(71, 36, 16);
+        border-radius: 10px;
+        transform-origin: 1px;
+        transition: all 0.3s linear;
+        z-index: 20;        
+        &--open{
+            &--1{
+                transform: translate(15%) rotate(45deg), ;
+                width: 2.25rem;
+                background-color: rgb(255, 255, 255);
+            }    
+            &--2{
+                transform: translateX(100%);
+                opacity: 0;
+            }    
+            &--3{
+                transform: translate(15%) rotate(-45deg);
+                width: 2.25rem;
+                background-color: rgb(255, 255, 255);
+            }          
+        }
+    } 
+    
+}
+
+// Media Queries
+
+@media(max-width:976px){
+    .burger{
+        &-button{
+            display: flex;
+            &--open{
+                transition: all 0.4s linear;
+                background-color: transparent;
+                transform: translateX(-100%);    
+            }
+            &--closed{
+                transition: all 0.4s linear;
+                transform: translateX(0%); 
+            }           
+        }
+    }
+}

@@ -1,38 +1,50 @@
 import React, { useEffect, useState } from 'react';
 
+import Burger from '../Features/Burger'
+
 import PC from '../../assets/pc.png'
+import cat from '../../assets/cat.png'
 import unicorn from '../../assets/unicorn.png'
 import star from '../../assets/star.png'
 
 import './style.scss';
 
-let picture = star
+let picture01 = PC
+let picture02 = star
 
-const Header = ( { open, opened } ) => {
+const Header = ( { enter, entered } ) => {
     
     //function to make a turn on image
     const [turn, setTurn] = useState(true)
     const toggle = () => {setTurn(!turn)}
-    let className = 'header-close';
-    if (open){className = 'header-image'}
+    let className = 'header-enter';
+    if (enter){className = 'header-image'}
     if(!turn){ className = 'header-image--turn' }
 
-    //function to count how much click on image
-    const [nClick, setNClick] = useState(0)
-    const count = () => {
-        setNClick(total => total +1)
+    //function to count how much click on image    
+    const [pcClick, setPcClick] = useState(0)
+    const count01 = () => {
+        setPcClick(total => total +1)
+    }    
+    
+    const [starClick, setStarClick] = useState(0)
+    const count02 = () => {
+        setStarClick(total => total +1)
     }
-
+    
     // condition to change picture
-    if (nClick >= 20){
-        picture = unicorn;
+    if (pcClick >= 10){
+        picture01 = cat;        
+    }
+    if (starClick >= 20){
+        picture02 = unicorn;
         className = 'header-image--unicorn';        
     }
     let classNameContainer = ""
     if(className === 'header-image--unicorn') {
         classNameContainer = 'header-picture'
-    } 
-    
+    }
+
     // function to change header style with scrolling
     const [small, setSmall] = useState(false);
 
@@ -44,36 +56,33 @@ const Header = ( { open, opened } ) => {
         }
     }, []);
     
-    return (
-        <div className={`header ${small ? "header-scrolling" : "header"} ${open ? "header" : "header-closed"}`}>
-            <div className={`${open ? "header-container" : "header-closed"}`}>
+    return (  // id="home" to fix issue activeclass on first render
+        <div id={`${small ? "" : "Home"}`} className={`header ${small ? "header-scrolling" : "header"} ${enter ? "header" : "header-before"}`}>
+            <div className={`${enter ? "header-container" : "header-before"}`}>
                 <div className={classNameContainer}>
-                    <img className={className} src={picture} alt="" onClick={()=>{ toggle(); count();}} onAnimationEnd={()=> toggle()}  />
-                    <img className={`${open ? "header-close" : "header-pc"}`}  src={PC} alt=""  />
+                    <img className={className} src={picture02} alt="" onClick={()=>{ toggle(); count02();}} onAnimationEnd={()=> toggle()}  />
+                    <img className={`${enter ? "header-enter" : "header-pc"}`}  src={picture01}  alt="" onClick={count01} />
                 </div>
                 <div className="header-intro">
                     <div className="header-me">
-                        <p className={`${open ? "header-close" : "header-text"}`} >
+                        <p className={`${enter ? "header-enter" : "header-text"}`} >
                             Hello there! I'm
                         </p>
                         <h1 className="header-title" >
                             Jérôme Burrus
                         </h1>
-                        <p className={`${open ? "header-portfolio" : "header-close"}`} >
+                        <p className={`${enter ? "header-portfolio" : "header-enter"}`} >
                             Portfolio
                         </p>
                     </div>
-                    <p className={`${open ? "header-close" : "header-text"}`} >
+                    <p className={`${enter ? "header-enter" : "header-text"}`} >
                         I'm front developper
                     </p>           
                 </div>
-                <button className={`${open ? "header-close" : "header-button"}`} onClick={opened} >c'est partis !</button>           
-                <ul className={`${open ? "header-nav" : "header-close"}`} >
-                    <li className="header-link">Accueil</li>
-                    <li className="header-link">Parcours</li>
-                    <li className="header-link">Projets</li>
-                    <li className="header-link">A mon sujet</li>
-                </ul>            
+                <button className={`${enter ? "header-enter" : "header-button"}`} onClick={entered} >c'est partis !</button>                
+                <div className={`${enter ? "header-nav" : "header-enter"}`} >
+                   <Burger /> 
+                </div>            
             </div>            
         </div>
     

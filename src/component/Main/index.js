@@ -1,8 +1,8 @@
 import React from 'react'
-import CV from './CV'
+import Carrer from './Career'
 import Home from './Home'
 import Projects from './Projects'
-import Skills from './Skills'
+import About from './About'
 
 import './style.scss'
 
@@ -10,9 +10,9 @@ const Main = () => {
     return (
         <div className="main">
             <Home />
-            <CV />
+            <Carrer />
             <Projects />
-            <Skills />
+            <About />
         </div>
     )
 }

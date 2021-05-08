@@ -1,0 +1,57 @@
+.nav{
+    &-list{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;    
+        margin: 0;
+    }
+
+    &-links{
+        display:inline-block;
+        color: red;
+        padding: 10px;
+        font-weight: bold;
+        transition: transform .5s, color .5s;
+            &:hover{
+                transform: scale(1.5) translateY(-2px);
+                color: white;                
+            }
+            
+    }
+}
+    
+.active{
+    color: black;
+}
+
+// Media Queries
+
+@media (max-width: 976px) {
+    .nav{
+        &-list{
+            // burger menu
+            &--open, &--closed{
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                background-color: #0D2538;
+                min-height: 100vh;
+                position: fixed;
+                top: 0;
+                right: -1px;
+                width: 60%;
+                transition: transform 0.5s ease;
+                z-index: 19;
+            }
+            &--open{
+                transform: translateX(0);
+            }
+            &--closed{                
+                transform: translateX(100%);              
+            }  
+        }
+        &-links{
+            margin: 0;                
+        }        
+    }
+}

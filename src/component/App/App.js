@@ -12,18 +12,18 @@ import './style.scss';
 function App() {
 
   // Display Welcome or rest of App
-  const [open, setOpen] = useState(false)
-  const opened = () => {
-    setOpen(!open)
+  const [enter, setEnter] = useState(false)
+  const entered = () => {
+    setEnter(!enter)
   }
   
   return (
-    <div className= { open ? "App" : "App-welcome" } >
+    <div className= { enter ? "App" : "App-welcome" } >
 
-        <Header open={open} opened={opened} />      
-        {open && <Main />  }
-        {open && <Footer /> }
-        {open && <ScrollTopButton /> }
+        <Header enter={enter} entered={entered} />      
+        {enter && <Main />  }
+        {enter && <Footer /> }
+        {enter && <ScrollTopButton /> }
     </div>
   );
 }

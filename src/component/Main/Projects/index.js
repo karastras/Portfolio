@@ -4,8 +4,8 @@ import './style.scss'
 
 const Projects = () => {
     return (
-        <div className="projects">
-            je suis Projects
+        <div id="Projects" className="projects">
+            je suis Projets
         </div>
     )
 }

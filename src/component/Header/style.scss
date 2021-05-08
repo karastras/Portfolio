@@ -20,7 +20,7 @@
             transition: linear .3s;
             height: 10vh;
         }
-        &-closed{
+        &-before{
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -28,7 +28,7 @@
             justify-content: center;
             background-color: burlywood;
         }
-        &-close{
+        &-enter{
             display: none;
         }
         &-picture{
@@ -61,17 +61,19 @@
             text-align: center;
         }
         &-me{
-            display: flex;
-            align-items: flex-end;
+            display: flex;            
             margin-bottom: 1rem;
+            align-items: flex-end;
         }
-
+        &-text{
+            animation: text 4s;
+        }
         &-title{
             font-size: 2.2rem;
             font-weight: bold;
             color: rgb(0, 0, 0);
             margin: 0 .3rem -4px;
-            animation: ease 3s titleenter ;            
+            animation: ease 3s titleenter ;        
         }
         &-portfolio{
             font-size: 2.2rem;
@@ -84,7 +86,7 @@
             margin: 2rem;
             padding: 1rem;
             border-radius: 5px;
-            animation: clickit 4s;
+            animation: clickit 5.5s;
         }
         &-nav{
             animation: naventer 3s;
@@ -98,9 +100,11 @@
             transition: transform .5s, color .5s;
             &:hover{
                 transform: scale(1.5) translateY(-2px);
-                color: white;
-                
+                color: white;                
             }
+        }
+        &-burger{
+            display: none;
         }
 }
 
@@ -173,6 +177,12 @@
 }
 
 @keyframes clickit {
+    0%      {opacity: 0}
+    80%     {opacity: 0}
+    100%    {opacity: 1}
+}
+
+@keyframes text {
     0%      {opacity: 0}
     80%     {opacity: 0}
     100%    {opacity: 1}

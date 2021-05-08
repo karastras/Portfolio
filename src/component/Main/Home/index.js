@@ -5,7 +5,7 @@ import './style.scss'
 
 const Home = () => {
     return (
-        <div className="home">
+        <div id="Home" className="home">
             <div className="home-container">
                 <div className="home-content">
                     <section className="home-left">
@@ -13,7 +13,7 @@ const Home = () => {
                         <img src={star} alt="" className="home-image" />
                     </section>
                     <section className="home-right">
-                        <h2  className="home-title">Un Petit mot de Mouah</h2>
+                        <h2 className="home-title">Un Petit mot de Mouah</h2>
                         <p  className="home-text">Nulla dolore sunt do laboris aute sunt eiusmod tempor deserunt 
                         consequat pariatur quis id. Cupidatat veniam ipsum aliqua dolor amet ullamco ex nisi 
                         ckkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkuat. Magna enim et sit officia enim 

@@ -4,7 +4,7 @@ import './style.scss'
 
 const Skills = () => {
     return (
-        <div className="skills">
+        <div id="About" className="skills">
             je suis Skills
         </div>
     )
