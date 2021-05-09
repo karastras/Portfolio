@@ -79,7 +79,7 @@ const Header = ( { enter, entered } ) => {
                         I'm front developper
                     </p>           
                 </div>
-                <button className={`${enter ? "header-enter" : "header-button"}`} onClick={entered} >c'est partis !</button>                
+                <button className={`${enter ? "header-enter" : "header-button"}`} onClick={entered} >c'est parti !</button>                
                 <div className={`${enter ? "header-nav" : "header-enter"}`} >
                    <Burger /> 
                 </div>            
