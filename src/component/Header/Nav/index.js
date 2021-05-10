@@ -10,23 +10,23 @@ const Nav = ({open, closed}) => {
     return(
         <div className="nav" >
             <ul className={open ? 'nav-list nav-list--open' : 'nav-list nav-list--closed'}>               
-                <li onClick={closed} >
-                    <Link activeClass="active" className="nav-links" spy={true} smooth to="Home">
+                <li >
+                    <Link activeClass="active" className="nav-links" spy={true} smooth to="Home" onClick={closed} >
                         Accueil
                     </Link>
                 </li>
-                <li onClick={closed} >
-                    <Link className="nav-links" activeClass="active" spy smooth to="Career">
+                <li>
+                    <Link className="nav-links" activeClass="active" spy smooth to="Career" onClick={closed} >
                         Parcours
                     </Link>
                 </li>
-                <li onClick={closed} >
-                    <Link className="nav-links" activeClass="active" spy smooth to="Projects">
+                <li >
+                    <Link className="nav-links" activeClass="active" spy smooth to="Projects" onClick={closed} >
                         Projets
                     </Link>
                 </li>
-                <li onClick={closed} >
-                    <Link className="nav-links" activeClass="active" spy smooth to="About">
+                <li >
+                    <Link className="nav-links" activeClass="active" spy smooth to="About" onClick={closed} >
                         A mon sujet
                     </Link>
                 </li>

@@ -1,5 +1,5 @@
 .header{
-    height: 15vh;
+    height: 17vh;
     position: fixed;
     width: 100%;
     top: 0;
@@ -12,13 +12,13 @@
             align-items: center;
             justify-content: space-between;
             width: 80%;
-            margin: auto;
+            margin: 0 auto;
         }
         &-scrolling{
             background-color: rgb(55, 141, 117);
             box-shadow: 0 0 10px rgba(0,0,0,1);
             transition: linear .3s;
-            height: 10vh;
+            height: 12vh;
         }
         &-before{
             height: 100vh;
@@ -55,18 +55,21 @@
                 }
             }
         }
-        &-intro{
+        &-content{
             display: flex;
             flex-direction: column;
             text-align: center;
         }
-        &-me{
+        &-intro{
             display: flex;            
             margin-bottom: 1rem;
             align-items: flex-end;
         }
         &-text{
             animation: text 6s;
+        }
+        &-me{
+            display: flex;
         }
         &-title{
             font-size: 2.2rem;
@@ -80,7 +83,7 @@
             font-weight: bold;
             color: rgb(0, 0, 0);
             margin: 0 .3rem -4px;
-            animation: ease 2s folioenter ;
+            animation: ease 2.5s folioenter ;
         }
         &-button{
             margin: 2rem;
@@ -89,7 +92,7 @@
             animation: clickit 7.5s;
         }
         &-nav{
-            animation: naventer 3s;
+            animation: naventer 3.5s;
             display: flex;
             flex-wrap: nowrap;
             color: rgb(95, 87, 87);
@@ -209,11 +212,53 @@
 
 @media(max-width:480px){
  .header{
-    &-container{
-        width: 100%;
-    }
-    &-title, &-portfolio{
+    height: 14vh;
+    display: flex;
+        &-before{
+            height: 100vh;
+        }
+        &-scrolling{
+            height: 12vh;
+        }
+        &-container{
+            width: 100%;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        &-image, &-image--turn, &-image--unicorn{
+            margin-right: 2rem;
+        }
+        &-me{        
+            display: inline;
+        }
+        &-reduce{
+            font-size: 1.5rem;
+        }
+        &-portfolio{
         font-size: 1rem;
+        margin: 0.5rem;
+        }
+ }
+ @keyframes folioenter{
+    0%      { transform:
+        translateY(-25px);
+            opacity: 0;}
+            50%      { transform:
+                translateY(-25px);
+                    opacity: 0;}
+    100%    { }
+}
+@keyframes naventer {
+    0%      {opacity: 0;}
+    70%     {opacity: 0;}
+    100%    {opacity: 1;}
+} 
+}
+
+@media(max-width:400px){
+    .header{
+        &-image, &-image--turn, &-image--unicorn{
+            margin-right: 0;
+        }
     }
- }   
 }

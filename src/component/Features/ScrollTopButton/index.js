@@ -27,12 +27,12 @@ const ScrollTopButton = () => {
   }, []);
 
   return (
-    <div className="scroll-to-top">
+    <div className="scrollToTop">
       {isVisible && (
         <div onClick={scrollToTop}>
           <IconContext.Provider value={{ className: 'react-icons' }}>
             <h3><FiArrowUpCircle /></h3>
-            <span className="scroll-to-top-text" >Haut de page</span>
+            <span className="scrollToTop-text" >Haut de page</span>
           </IconContext.Provider>
         </div>
       )}

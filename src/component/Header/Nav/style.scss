@@ -36,12 +36,13 @@
                 align-items: center;
                 background-color: #0D2538;
                 min-height: 100vh;
+                border-left: white 2px solid;
                 position: fixed;
                 top: 0;
                 right: -1px;
-                width: 60%;
+                width: 50%;
                 transition: transform 0.5s ease;
-                z-index: 19;
+                
             }
             &--open{
                 transform: translateX(0);

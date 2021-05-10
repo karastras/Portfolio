@@ -63,17 +63,19 @@ const Header = ( { enter, entered } ) => {
                     <img className={className} src={picture02} alt="" onClick={()=>{ toggle(); count02();}} onAnimationEnd={()=> toggle()}  />
                     <img className={`${enter ? "header-enter" : "header-pc"}`}  src={picture01}  alt="" onClick={count01} />
                 </div>
-                <div className="header-intro">
-                    <div className="header-me">
+                <div className="header-content">
+                    <div className="header-intro">
                         <p className={`${enter ? "header-enter" : "header-text"}`} >
                             Hello there! I'm
                         </p>
-                        <h1 className="header-title" >
-                            Jérôme Burrus
-                        </h1>
-                        <p className={`${enter ? "header-portfolio" : "header-enter"}`} >
-                            Portfolio
-                        </p>
+                        <div className="header-me">
+                            <h1 className={`${enter ? "header-title header-reduce" : "header-title"}`} >
+                                Jérôme Burrus
+                            </h1>
+                            <p className={`${enter ? "header-portfolio" : "header-enter"}`} >
+                                Portfolio
+                            </p>
+                        </div>
                     </div>
                     <p className={`${enter ? "header-enter" : "header-text"}`} >
                         I'm front developper
