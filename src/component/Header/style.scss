@@ -291,8 +291,46 @@
 
 @media(max-width:400px){
     .header{
+        text-align: center;
+        margin: auto;
         &-image, &-image--turn, &-image--unicorn{
-            margin-right: 0;
+            margin-right: 0.5rem;
         }
+        &-pc{
+            width: 90%;
+        }
+        &-text{
+            font-size: 1rem;
+        }
+    }
+    @keyframes titleenter {
+        0%      {opacity: 0;
+                transform: 
+                    translateY(-230px)
+                    translateX(-140px)
+                    scale(0.4)}
+        30%      {opacity: 1;
+                transform: 
+                    translateY(-230px)
+                    translateX(-140px)
+                    scale(0.4)}        
+        50%     {transform: 
+                    translateY(-400px)
+                    translateX(-40px)
+                    scale(0.6)
+                }
+        55%     {transform: translateY(-450px)
+                rotateY(360deg)}
+                80%{transform: translateY(0);
+                    opacity: 1;}
+                    82%{opacity: 0;}
+                83%{opacity: 1;}
+                85%{opacity: 0;}
+                86%{opacity: 1;}
+                93%{opacity: 1;}
+                96%{opacity: 0;}
+                97%{opacity: 1;}
+                99%{opacity: 0;}
+                100%{opacity: 1;}
     }
 }
