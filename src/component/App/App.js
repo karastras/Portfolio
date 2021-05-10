@@ -13,8 +13,11 @@ function App() {
 
   // Display Welcome or rest of App
   const [enter, setEnter] = useState(false)
+  // timer to see the little animation on the button
   const entered = () => {
-    setEnter(!enter)
+  setTimeout(()=> {
+    setEnter(true)
+    }, 400);  
   }
   
   return (

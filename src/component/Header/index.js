@@ -66,7 +66,7 @@ const Header = ( { enter, entered } ) => {
                 <div className="header-content">
                     <div className="header-intro">
                         <p className={`${enter ? "header-enter" : "header-text"}`} >
-                            Hello there! I'm
+                            Hello User ! Moi c'est 
                         </p>
                         <div className="header-me">
                             <h1 className={`${enter ? "header-title header-reduce" : "header-title"}`} >
@@ -78,10 +78,13 @@ const Header = ( { enter, entered } ) => {
                         </div>
                     </div>
                     <p className={`${enter ? "header-enter" : "header-text"}`} >
-                        I'm front developper
+                        et je suis &lt;
+                        <span className="header-front">Developer </span>
+                        props=&#x7B;
+                        <span className="header-dev"> front</span> &#125; /&gt;
                     </p>           
                 </div>
-                <button className={`${enter ? "header-enter" : "header-button"}`} onClick={entered} >c'est parti !</button>                
+                <button className={`${enter ? "header-enter" : "header-button"}`} onClick={entered} >Go!</button>                
                 <div className={`${enter ? "header-nav" : "header-enter"}`} >
                    <Burger /> 
                 </div>            

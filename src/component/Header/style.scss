@@ -4,18 +4,18 @@
     width: 100%;
     top: 0;
     display: flex;
-    background-color: rgb(171, 185, 181);    
+    background-color: #B0B0B0;    
     z-index: 3;
     transition: ease-in 0.3s;
         &-container{
             display: flex;
+            justify-content: space-around;
             align-items: center;
-            justify-content: space-between;
             width: 80%;
             margin: 0 auto;
         }
         &-scrolling{
-            background-color: rgb(55, 141, 117);
+            background-color: #989898;
             box-shadow: 0 0 10px rgba(0,0,0,1);
             transition: linear .3s;
             height: 12vh;
@@ -32,7 +32,8 @@
             display: none;
         }
         &-picture{
-            animation: floating infinite 5s ease 3.5s;        
+            animation: floating infinite 5s ease 3.5s;
+            align-self: flex-start;
         }
         &-image{
             width: 100px;
@@ -61,17 +62,28 @@
             text-align: center;
         }
         &-intro{
-            display: flex;            
-            margin-bottom: 1rem;
+            display: flex;
             align-items: flex-end;
         }
         &-text{
+            margin-top: 1rem;
             animation: text 6s;
+            font-size: 1.5rem;
+        }
+        &-front{
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: rgb(10, 161, 91);
+        }
+        &-dev{
+            font-weight: bold;
         }
         &-me{
+            align-self: flex-end;
             display: flex;
         }
         &-title{
+            font-family: 'Sedgwick Ave Display', cursive;
             font-size: 2.2rem;
             font-weight: bold;
             color: rgb(0, 0, 0);
@@ -79,17 +91,33 @@
             animation: ease 5s titleenter ;        
         }
         &-portfolio{
-            font-size: 2.2rem;
+            font-family: 'Qwigley' , cursive;
+            font-size: 2.5rem;
             font-weight: bold;
             color: rgb(0, 0, 0);
             margin: 0 .3rem -4px;
             animation: ease 2.5s folioenter ;
         }
         &-button{
-            margin: 2rem;
-            padding: 1rem;
-            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 2rem;
+            font-weight: bold;
+            padding: 10px 0 10px 10px ;
+            background-color: lightgray;
+            text-shadow: -1px -1px black, 1px 1px white;
+            color: gray;
+            border-radius: 7px;
+            box-shadow: 0 .2em gray; 
+            cursor: pointer;
             animation: clickit 7.5s;
+            font-family: 'Press Start 2P', cursive;            
+            font-size: 1.5rem;
+            &:active {
+                box-shadow: none;
+                position: relative;
+                top: .2em;
+            }
         }
         &-nav{
             animation: naventer 3.5s;
@@ -153,18 +181,18 @@
 @keyframes titleenter {
     0%      {opacity: 0;
             transform: 
-                translateY(-280px)
-                translateX(-140px)
+                translateY(-270px)
+                translateX(-190px)
                 scale(0.4)}
     30%      {opacity: 1;
             transform: 
-                translateY(-280px)
-                translateX(-140px)
+                translateY(-270px)
+                translateX(-190px)
                 scale(0.4)}        
     50%     {transform: 
                 translateY(-400px)
                 translateX(-40px)
-                scale(0.7)
+                scale(0.6)
             }
     55%     {transform: translateY(-450px)
             rotateY(360deg)}
@@ -217,6 +245,7 @@
         &-before{
             height: 100vh;
         }
+        
         &-scrolling{
             height: 12vh;
         }
@@ -231,14 +260,19 @@
         &-me{        
             display: inline;
         }
+        &-title{
+            font-size: 2rem;
+        }
         &-reduce{
             font-size: 1.5rem;
         }
         &-portfolio{
-        font-size: 1rem;
-        margin: 0.5rem;
+        font-size: 1.5rem;
+        margin: 0.5rem 0.5rem 1rem 0.5rem;
+        
         }
  }
+ 
  @keyframes folioenter{
     0%      { transform:
         translateY(-25px);
