@@ -1,11 +1,12 @@
 import React from 'react'
 
+
 import './style.scss'
 
 const Carrer = () => {
     return (
         <div id="Career" className="cv">
-            Je suis Parcours
+            je suis parcours
 
         </div>
     )

@@ -19,20 +19,30 @@
         }
         &-left{
             position: relative;
+            text-align: center;
+        }
+        &-title{
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+        &-text{
+            margin-top: 1rem;
+            font-size: 1.4rem;
         }
         &-slogan{
             background: white;
             position: absolute;
-            margin-top: 5%;
-            right: 17%;
+            margin-top: 7%;
+            right: 25%;
             color: black;
             padding: 1em;
             border-radius: 15px;
-            width: 15vw;
+            width: auto;
             text-align: left;
         }
         &-image{
-            width: 80%;
+            width: 50%;
         }
         // Scroll icon
         &-foot{
@@ -50,6 +60,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
             &-icon{
                 display: block;
                 position: relative;
@@ -74,14 +85,13 @@
                     width: 100%;
                     border-radius: inherit;
                     background: #fff;
-                    animation: scroll_1 2.75s ease-in-out infinite;
+                    animation: scroll 2.75s ease-in-out infinite;
                     }
             }
         }
 }
 
-  
-@keyframes scroll_1 {
+@keyframes scroll {
     0%   { transform: translateY(0); }
     25%  { transform: translateY(-0.6em); }
     50%  { transform: translateY(0); }

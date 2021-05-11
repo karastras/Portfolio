@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 import Burger from '../Features/Burger'
 
-import PC from '../../assets/pc.png'
-import cat from '../../assets/cat.png'
-import unicorn from '../../assets/unicorn.png'
-import star from '../../assets/star.png'
+import PC from '../../assets/images/pc.png'
+import cat from '../../assets/images/cat.png'
+import unicorn from '../../assets/images/unicorn.png'
+import star from '../../assets/images/star.png'
 
 import './style.scss';
 
