@@ -97,4 +97,31 @@
     50%  { transform: translateY(0); }
     75%  { transform: translateY(0.6em); }
     100% { transform: translateY(0); }
-  }
+}
+
+@media(max-width:480px){
+    .home{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &-container{
+            margin-top:7rem;
+            display: flex;
+            flex-direction: column;
+        }
+        &-content{
+            display: flex;
+            flex-direction: column;
+        }
+        &-right, &-left{
+            width: 100%;            
+        }
+        &-foot{
+            display: none;
+        }
+        &-slogan{
+            margin-top: 4%;
+            right: 5%;
+        }
+    }
+   }

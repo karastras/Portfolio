@@ -2,6 +2,10 @@ import React from 'react'
 
 import Card from '../../Features/Card'
 
+import prana from '../../../assets/images/prana.jpg'
+import travel from '../../../assets/images/travel.png'
+import fingerPc from '../../../assets/images/fingerP.png'
+
 import './style.scss'
 
 
@@ -16,14 +20,16 @@ const Projects = () => {
                 <div className="project-card01">
                     <Card  
                             title="Prana -site vitrine-"
-                            text="Site vitrine pour un institut de soin biologique. Le site est publié"
-                            tech="React"
+                            picture={prana}
+                            text="Site vitrine pour un institut de soin biologique. Le site est publié. L'historique du site est dans ses mentions légales."
+                            tech="Réalisé avec: REACT"
                             url1="https://example-prana.netlify.app/" 
                             url2="https://github.com/karastras/Prana"
                             />
                 </div>
                 <div className="project-card02">
                     <Card   title="My Travel Road"
+                            picture={travel}
                             text="Site créé en fin de formation O'clock dans les conditions réelles
                             d'entreprise dans une équipe de 5 personnes. Site en cours de publication.
                             Vous pouvez consulter la présentation de fin de formation."
@@ -34,11 +40,12 @@ const Projects = () => {
                 </div>
                 <div className="project-card03">
                     <Card   title="Portfolio"
+                            picture={fingerPc}
                             text="Dossier personnel dans lequel les acquis de formation et les acquis d'expérience
                             sont définis et démontrés en vue d'une reconnaissance par un établissement d'enseignement
                             ou un employeur. J'ai préférer coder moi-même le projet plutôt que d'utiliser des templates
                             et autres librairies, je peux ainsi avoir la main sur l'ensemble du code."
-                            tech="React"
+                            tech="Réalisé avec: REACT"
                             url2="https://github.com/karastras/Portfolio" 
                             hiddenButton
                             />               

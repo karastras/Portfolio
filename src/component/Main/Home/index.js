@@ -15,7 +15,7 @@ const Home = () => {
                         <img src={star} alt="" className="home-image" />
                     </section>
                     <section className="home-right">
-                        <h2 className="home-title">“ On ne peut apprendre le code web, on ne peut qu’apprendre à coder ”</h2>
+                        <h2 className="home-title">“ On ne peut apprendre le code Web, on ne peut qu’apprendre à coder ”</h2>
                         <p  className="home-text">
                             Cette citation d'Emmanuel Kant, détourné de son contenu original en rapport
                             avec la philosophie, est l'image même de cet océan de connaissances dans lequel on se plonge en
