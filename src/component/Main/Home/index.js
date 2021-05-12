@@ -17,7 +17,7 @@ const Home = () => {
                     <section className="home-right">
                         <h2 className="home-title">“ On ne peut apprendre le code Web, on ne peut qu’apprendre à coder ”</h2>
                         <p  className="home-text">
-                            Cette citation d'Emmanuel Kant, détourné de son contenu original en rapport
+                            Cette citation d'Emmanuel Kant, détournée de son contenu original en rapport
                             avec la philosophie, est l'image même de cet océan de connaissances dans lequel on se plonge en
                             choisissant de devenir développeur.
                         </p>
@@ -26,7 +26,7 @@ const Home = () => {
                             Les connaissances à assimiler sont sans limites et ce qui est valable aujourd'hui ne le sera peut-être plus demain. Alors plutôt que de 
                             se forcer à tout assimiler, il faut apprendre à comprendre les logiques des langages utilisés, l'utilité
                             des différentes librairies et frameworks, savoir comment chercher l'information dont on a besoin et 
-                            également connaître la méthodologie d'organisation dans son code ainsi qu'au au sein d'une équipe de développement.
+                            également connaître la méthodologie d'organisation dans son code ainsi qu'au sein d'une équipe de développement.
                         </p>
                         <p  className="home-text">
                             Hier je ne connaissais rien, aujourd'hui je sais mettre en application ce que j'ai appris et demain je pourrai

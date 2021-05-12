@@ -4,7 +4,9 @@ import Card from '../../Features/Card'
 
 import prana from '../../../assets/images/prana.jpg'
 import travel from '../../../assets/images/travel.png'
-import fingerPc from '../../../assets/images/fingerP.png'
+import project from '../../../assets/images/project.png'
+import portfolio from '../../../assets/images/portfolio.jpg'
+
 
 import './style.scss'
 
@@ -13,6 +15,9 @@ import './style.scss'
 const Projects = () => {
     return (
         <div id="Projects" className="project">
+            <div className="project-image">
+                    <img className="project-img" src={project} alt=""/>
+                </div>
             <h2 className="project-title">
                 Mes projets
             </h2>
@@ -40,7 +45,7 @@ const Projects = () => {
                 </div>
                 <div className="project-card03">
                     <Card   title="Portfolio"
-                            picture={fingerPc}
+                            picture={portfolio}
                             text="Dossier personnel dans lequel les acquis de formation et les acquis d'expérience
                             sont définis et démontrés en vue d'une reconnaissance par un établissement d'enseignement
                             ou un employeur. J'ai préférer coder moi-même le projet plutôt que d'utiliser des templates

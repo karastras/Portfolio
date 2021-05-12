@@ -1,3 +1,17 @@
-.skills{
-    height: 100vh;
+.about{
+    min-height: 100vh;
+    margin-top: 6rem;
+    &-image{
+        text-align: center;
+    }
+    &-img{
+        width: 8%;
+    }
+        &-title{
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: bold;
+            position: relative;
+        }
+
 }
