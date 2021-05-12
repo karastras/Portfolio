@@ -5,7 +5,7 @@
             text-align: center;
         }
         &-img{
-            width: 10%;
+            width: 200px;
         }
         &-title{
             text-align: center;
@@ -82,7 +82,7 @@
             }
         }
 }
-@media(max-width:976px){
+@media(max-width:1025px){
     .career{
         &-imgOpquast, &-imgOclock, &-imgPlane{
             width: 40px;
