@@ -2,7 +2,8 @@
     min-height: 100vh;
     margin: 4rem 0;
         &-image{
-            text-align: center;        }
+            text-align: center;
+        }
         &-img{
             width: 10%;
         }
@@ -53,12 +54,12 @@
             }
             &-container{
                 background-color: #D3D3D3;
-                max-height: 26vh;
                 width: 80%;
                 box-shadow: black 0.2rem 0.2rem 1rem;
                 border-radius: 15px;
                 display: flex;
                 align-items: center;
+                max-height: 26vh;
             }
             &-content{
                 margin: 0.5rem 1rem;
@@ -80,4 +81,43 @@
                 text-align: center;
             }
         }
+}
+@media(max-width:976px){
+    .career{
+        &-imgOpquast, &-imgOclock, &-imgPlane{
+            width: 40px;
+            height: 40px;
+            left: -20px
+        }
+        &-line{
+            margin: 0 1.5rem 0 0 ;
+            min-height: auto;
+        }
+        &-item{
+            &-container{
+                margin: 3rem 0 1rem 0;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                max-height: 100vh;
+            }
+            &-date{
+                margin: .5rem 0 0 0;
+            }
+            &-content{
+                width: 100%;
+            }
+            &-description{
+                border-bottom: solid rgb(165, 165, 165) 3px;
+                padding: 10px 0;;
+            }
+            &-text{
+                margin-top: 0;
+                width: 90%;
+                padding: 10px;
+            }
+            
+        }
+    }
 }
