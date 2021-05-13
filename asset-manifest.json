@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8a79d9b.chunk.css",
-    "main.js": "/static/js/main.244915d1.chunk.js",
-    "main.js.map": "/static/js/main.244915d1.chunk.js.map",
+    "main.css": "/static/css/main.c4ac28fc.chunk.css",
+    "main.js": "/static/js/main.334b8330.chunk.js",
+    "main.js.map": "/static/js/main.334b8330.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d0605945.js",
     "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
     "static/js/2.bbf89af3.chunk.js": "/static/js/2.bbf89af3.chunk.js",
     "static/js/2.bbf89af3.chunk.js.map": "/static/js/2.bbf89af3.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a8a79d9b.chunk.css.map": "/static/css/main.a8a79d9b.chunk.css.map",
+    "static/css/main.c4ac28fc.chunk.css.map": "/static/css/main.c4ac28fc.chunk.css.map",
     "static/js/2.bbf89af3.chunk.js.LICENSE.txt": "/static/js/2.bbf89af3.chunk.js.LICENSE.txt",
     "static/media/afpa.af42a2b0.jpg": "/static/media/afpa.af42a2b0.jpg",
+    "static/media/astro.ca88cbfa.png": "/static/media/astro.ca88cbfa.png",
     "static/media/bac.c93afecf.png": "/static/media/bac.c93afecf.png",
+    "static/media/bye.e3ec09da.png": "/static/media/bye.e3ec09da.png",
     "static/media/cat.9f83ed2f.png": "/static/media/cat.9f83ed2f.png",
     "static/media/diplo.50c0047b.jpg": "/static/media/diplo.50c0047b.jpg",
-    "static/media/end.0f8f257a.png": "/static/media/end.0f8f257a.png",
     "static/media/glass.02f7c0a3.png": "/static/media/glass.02f7c0a3.png",
     "static/media/hammer.68b94bf2.jpg": "/static/media/hammer.68b94bf2.jpg",
     "static/media/hole.8fb0449d.png": "/static/media/hole.8fb0449d.png",
@@ -33,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.d0605945.js",
     "static/js/2.bbf89af3.chunk.js",
-    "static/css/main.a8a79d9b.chunk.css",
-    "static/js/main.244915d1.chunk.js"
+    "static/css/main.c4ac28fc.chunk.css",
+    "static/js/main.334b8330.chunk.js"
   ]
 }
