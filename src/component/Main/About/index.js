@@ -95,11 +95,11 @@ const About = () => {
                 </p>
                 <p className="about-content-text">
                     Aujourd'hui je peux avancer dans ce domaine avec les bases de ma formation de développeur web et web mobile, continuer à évoluer 
-                    à l'aide des contenus présent sur le net, ainsi que les différentes communautés et enfin rejoindre une équipe de développement.
+                    à l'aide des contenus présents sur le net, ainsi que les différentes communautés et enfin rejoindre une équipe de développement.
                 </p>
                 <p className="about-content-text">
                     Mes différentes expériences professionnelles m'ont permis d'affiner mes atouts:<br/>
-                    <span className="about-content-important">Soif de connaissance, adaptabilité, rigeur, organisation, travail en équipe, recherche de challenge et source de propositions </span>
+                    <span className="about-content-important">Soif de connaissance, adaptabilité, rigueur, organisation, travail en équipe, recherche de challenge et source de propositions </span>
                     sont mes attributs
                     qui seront des atouts nécessaires pour un futur emploi de développeur web. Même si ma formation m'a ammené à me spécialiser dans
                     le Front -&gt; REACT.js, je veux approfondir mes connaissances en Back.<br/>
