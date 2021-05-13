@@ -2,6 +2,32 @@
     height: 11vh;
     background-color: #797979;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+        &-content{
+            margin-right: 6rem;
+            display: flex;
+            align-items: center;
+        }
+        &-img{
+            width: 9vh;
+        }
+        &-linked, &-Gmail{
+            color: black;
+            font-size: 2rem;
+            margin: 0 1rem;
+        }
+        &-Gmail{
+            font-size: 2.5rem;
+        }
+}
+
+@media(max-width:480px){
+    .footer{
+        &-content{
+            margin-right: 1rem;
+        }
+        &-linked, &-Gmail{
+            margin: 0 .5rem;
+        }
+    }
 }

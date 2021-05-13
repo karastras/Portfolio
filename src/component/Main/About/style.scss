@@ -1,17 +1,157 @@
 .about{
-    min-height: 100vh;
     margin-top: 6rem;
-    &-image{
-        text-align: center;
-    }
-    &-img{
-        width: 170px;
-    }
+        &-image{
+            text-align: center;
+        }
+        &-img{
+            width: 170px;
+        }
         &-title{
             text-align: center;
             font-size: 2.2rem;
             font-weight: bold;
             position: relative;
         }
+        &-content{
+                &-title{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    margin: 2rem 0 1rem 3rem;
 
+                }
+                &-text, &-end{
+                    font-size: 1.4rem;
+                    margin-bottom: .5rem;
+                }
+                &-important{
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                }
+                &-end{
+                    text-align: center;
+                    font-weight: bold;
+                    margin-top: 2rem;
+                }
+                &-picture{
+                    height: 40vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
+                &-buttons{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                &-startButton, &-goButton{
+                    margin-top: 1rem;
+                    font-weight: bold;
+                    padding: 10px 0 10px 10px ;
+                    background-color: lightgray;
+                    text-shadow: -1px -1px black, 1px 1px white;
+                    color: gray;
+                    border-radius: 7px;
+                    box-shadow: 0 .2em gray; 
+                    cursor: pointer;
+                    font-family: 'Press Start 2P', cursive;            
+                    font-size: 1.5rem;
+                    &:active {
+                        box-shadow: none;
+                        position: relative;
+                        top: .2em;
+                    }
+                }
+                &-hidden{
+                   display: none;
+                }
+                &-goButton{
+                    color: red;
+                }
+                &-image{
+                    text-align: right;
+                }
+                &-start{
+                    animation: start infinite .1s;
+                }
+                &-go{
+                    animation: go ease 3s;
+                }
+                &-enterAstro{
+                    animation: enterAstro 4s ease;
+                    width: 300px
+                }
+                &-final{
+                    animation: astrofloat infinite 5s ease;
+                    width: 300px
+                }
+
+        }
+
+}
+@keyframes start {
+    0%      {transform: 
+                translateY(0)
+                translateX(0)
+    }
+    25%     {transform: 
+                translateY(10px)
+                translateX(15px)
+            }
+    50%     {transform: 
+                translateY(20px)
+                translateX(0px)
+            }
+    75%     {transform: 
+                translateY(10px)
+                translateX(-15px)
+            }
+    100%    {transform: 
+                translateY(0)
+                translateX(0)
+            }
+}
+@keyframes go {
+    0%     {transform: 
+                translateY(0)
+                translateX(0)
+    }
+    99%    {transform: 
+                translateY(-500px)
+                translateX(800px)
+            
+            }
+    100%{opacity: 0;}
+}
+@keyframes enterAstro{
+    from      {transform: 
+                scale(0)}
+    to     {transform: 
+                scale(1)}
+}
+@keyframes astrofloat {
+    0%      {transform: translateY(0)}
+    50%     {transform: translateY(15px)}
+    100%    {transform: translateY(0)}
+}
+@media(max-width:480px){
+    .about{
+        &-content{
+            &-text{
+                font-size: 1.2rem;
+            }
+            &-important{
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+            &-img{
+                width: 100px;
+            }
+            &-start{
+                width: 100px;
+            }
+            &-go{
+                width: 100px;
+            }
+        }
+    }
 }

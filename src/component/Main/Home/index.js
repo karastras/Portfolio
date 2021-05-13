@@ -22,7 +22,7 @@ const Home = () => {
                             choisissant de devenir développeur.
                         </p>
                         <p  className="home-text">
-                            C'est ce que j'ai appris de ma formation à l'école <a target='_blank' rel='noreferrer' href="https://oclock.io/">O'clock</a>*.<br />
+                            C'est ce que j'ai appris de ma formation à l'école <a target='_blank' rel='noreferrer' href="https://oclock.io/">O'clock</a>.<br />
                             Les connaissances à assimiler sont sans limites et ce qui est valable aujourd'hui ne le sera peut-être plus demain. Alors plutôt que de 
                             se forcer à tout assimiler, il faut apprendre à comprendre les logiques des langages utilisés, l'utilité
                             des différentes librairies et frameworks, savoir comment chercher l'information dont on a besoin et 
