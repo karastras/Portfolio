@@ -36,8 +36,8 @@ const Projects = () => {
                     <Card   title="My Travel Road"
                             picture={travel}
                             text="Site créé en fin de formation O'clock dans les conditions réelles
-                            d'entreprise dans une équipe de 5 personnes. Site en cours de publication.
-                            Vous pouvez consulter la présentation de fin de formation."
+                            d'entreprise dans une équipe de 5 personnes. Méthode Agile, Rôle: Product Owner. Site en
+                            cours de publication. Vous pouvez consulter la présentation de fin de formation."                        
                             tech="Front: REACT/REDDUX <-> Back: SYMFONY"
                             url1="https://www.youtube.com/watch?v=H0ChNO5qkMM&t=3s" 
                             url2="https://github.com/karastras/MyTravelRoad"

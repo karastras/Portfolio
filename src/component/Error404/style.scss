@@ -1,0 +1,44 @@
+.error{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+        &-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+                &-title{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    color: white;
+                }
+                &-img {
+                    height: 40vh;
+                }
+                &-text{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: white;
+                }
+                &-button{
+                    margin-top: 1rem;
+                    font-weight: bold;
+                    padding: 10px 0 10px 10px ;
+                    background-color: lightgray;
+                    text-shadow: -1px -1px black, 1px 1px white;
+                    color: gray;
+                    border-radius: 7px;
+                    box-shadow: 0 .2em gray; 
+                    cursor: pointer;
+                    font-family: 'Press Start 2P', cursive;            
+                    font-size: 1.5rem;
+                        &:active {
+                            box-shadow: none;
+                            position: relative;
+                            top: .2em;
+                        }
+                }                
+
+        }
+}

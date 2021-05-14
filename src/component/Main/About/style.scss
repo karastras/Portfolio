@@ -55,11 +55,11 @@
                     cursor: pointer;
                     font-family: 'Press Start 2P', cursive;            
                     font-size: 1.5rem;
-                    &:active {
-                        box-shadow: none;
-                        position: relative;
-                        top: .2em;
-                    }
+                        &:active {
+                            box-shadow: none;
+                            position: relative;
+                            top: .2em;
+                        }
                 }
                 &-hidden{
                    display: none;
@@ -68,21 +68,30 @@
                     color: red;
                 }
                 &-image{
-                    text-align: right;
+                    text-align: center;
                 }
                 &-start{
                     animation: start infinite .1s;
+                }
+                &-goSection{
+                    display: flex;    
+                }
+                &-alert{
+                    margin-right: 1rem;
+                    font-size: 4rem;
+                    color: red;
+                    animation: alert infinite ease .8s;                  
                 }
                 &-go{
                     animation: go ease 3s;
                 }
                 &-enterAstro{
                     animation: enterAstro 4s ease;
-                    width: 300px
+                    
                 }
                 &-final{
                     animation: astrofloat infinite 5s ease;
-                    width: 300px
+                    
                 }
 
         }
@@ -109,6 +118,10 @@
                 translateY(0)
                 translateX(0)
             }
+}
+@keyframes alert {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 @keyframes go {
     0%     {transform: 
@@ -143,14 +156,23 @@
                 font-weight: bold;
                 font-size: 1.2rem;
             }
+            &-picture{
+                justify-content: center;
+            }
             &-img{
-                width: 100px;
+                width: 200px;
             }
             &-start{
-                width: 100px;
+                width: 200px;
             }
             &-go{
-                width: 100px;
+                width: 200px;
+            }
+            &-enterAstro{
+                width: 200px
+            }
+            &-final{
+                width: 200px
             }
         }
     }

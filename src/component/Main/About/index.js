@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 
 import glass from '../../../assets/images/glass.png'
-
-import bye from '../../../assets/images/bye.png'
+import rocket from '../../../assets/images/rocket.png'
 import astro from '../../../assets/images/astro.png'
+import end from '../../../assets/images/end.png'
+
+import {GoAlert} from 'react-icons/go'
 
 import './style.scss'
 
 
-let picture = bye
+
 const About = () => {
     
     // action on Start button
@@ -18,9 +20,14 @@ const About = () => {
     // action on Go button
     const [ isGo, setIsGo ] = useState(false)
     // change picture
-    const [ pic, setPic ] = useState(false)
+    const [ astroPic, setAstroPic ] = useState(false)
     // animation final AstoFloat
     const [ isAstro, setIsAstro ] = useState(false)
+    // count to change picture
+    const [ astroClick, setAstroClick] = useState(0)
+
+    // picture end of page
+    let picture = rocket
     // Classname
     let classStart = "about-content-img"
     let classButtonStart = "about-content-startButton"
@@ -33,37 +40,45 @@ const About = () => {
             setIsButtonGo(true)
             }, 1000);
     }
-    // launch Go animation + hidden start-button 
-    const go = () => {
-        setClickStart(false)
-        setIsGo(true)        
-    }
     // launch Start animation 
     if(clickStart){
         classStart = "about-content-start";
     }
     // appears go-button + hidden start-button
     if(isButtonGo){
-        classButtonGo = "about-content-goButton"
+        classButtonGo = "about-content-goSection" 
         classButtonStart = "about-content-hidden"
     }
-    
-    // launch Go animation
+
+    // launch Go animation + cancel start-animation
+    const go = () => {
+        setClickStart(false)
+        setIsGo(true)        
+    }    
+    // launch Go animation + switch picture with astro
     if(isGo){
         classStart = "about-content-go";
-        document.body.style.overflowX = 'hidden';
-        setTimeout(() => { setPic(true) }, 2500);
+        document.body.style.overflowX = 'hidden'; // fix issue in animation
+        setTimeout(() => { setAstroPic(true) }, 2500);
     }
-
-    // after Go animation, picture change and launch final aniamtastro
-    if(pic){
+    // after Go animation, switch picture with astro and launch enterastro animation 
+    if(astroPic){
         picture= astro
         classButtonGo = "about-content-hidden"
         classStart = "about-content-enterAstro"
         setTimeout(() => { setIsAstro(true) }, 3500);
     }
+    // launch astrofloat animation
     if(isAstro){
         classStart = "about-content-final"
+    }
+    // count to change astro picture
+    const count03 = () => {
+        setAstroClick(total => total +1)
+    }
+    if(astroClick >= 10){
+        picture = end
+        classStart= "about-content-img"
     }
     return (
         <div id="About" className="about">
@@ -120,12 +135,15 @@ const About = () => {
                         <button className={classButtonStart} onClick={start}>
                             Start
                         </button>
-                        <button className={classButtonGo} onClick={go}>
+                    <div className={classButtonGo}>                      
+                        <GoAlert className="about-content-alert" />                       
+                        <button className="about-content-goButton" onClick={go}>
                             Go!
                         </button>                            
                     </div>
+                    </div>
                     <div className="about-content-image">
-                        <img className={classStart} src={picture} alt=""/>
+                        <img className={classStart} src={picture} onClick={isAstro ? count03 : undefined} alt=""/>
                     </div>
                 </div>
             </div>

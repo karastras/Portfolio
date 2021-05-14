@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 import Header from '../Header';
 import Main from '../Main';
 import Footer from '../Footer';
+import Error404 from '../Error404'
 
 import ScrollTopButton from '../Features/ScrollTopButton'
 
@@ -22,11 +24,17 @@ function App() {
   
   return (
     <div className= { enter ? "App" : "App-welcome" } >
-
-        <Header enter={enter} entered={entered} />      
-        {enter && <Main />  }
-        {enter && <Footer /> }
-        {enter && <ScrollTopButton /> }
+      <Switch>
+        <Route exact path='/' component={App}>
+          <Route render={() => (
+            <Header enter={enter} entered={entered}/>
+            )}/>
+          {enter && <Main/>  }        
+          {enter && <Footer/>  }            
+          {enter && <ScrollTopButton /> }
+        </Route>
+        <Route component={Error404}/>      
+      </Switch>
     </div>
   );
 }
