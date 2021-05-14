@@ -54,13 +54,14 @@
                     margin: 2rem 1rem 0 0;
                 }
                 &-container{
+                    margin: 2rem 0;
                     background-color: #D3D3D3;
                     width: 80%;
                     box-shadow: black 0.2rem 0.2rem 1rem;
                     border-radius: 15px;
                     display: flex;
                     align-items: center;
-                    max-height: 26vh;
+                    max-height: auto;
                 }
                 &-content{
                     margin: 0.5rem 1rem;
@@ -107,17 +108,15 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: auto;
-                max-height: 100vh;
             }
             &-date{
                 margin: .5rem 0 0 0;
             }
             &-content{
                 width: 100%;
+                border-bottom: solid rgb(165, 165, 165) 3px;
             }
             &-description{
-                border-bottom: solid rgb(165, 165, 165) 3px;
                 padding: 10px 0;;
             }
             &-text{
@@ -126,6 +125,25 @@
                 padding: 10px;
             }
             
+        }
+    }
+}
+@media(max-width:350px){
+    .career{
+        &-container{
+            padding: 25px 25px 0 25px;
+        }
+        &-line{
+            margin: 0;
+        }
+        &-item{
+            &-container{
+                margin-left: 0.5rem;
+            }
+            &-date{
+                position: absolute;
+                margin-left: 1.5rem;
+            }
         }
     }
 }

@@ -339,3 +339,66 @@
                 100%{opacity: 1;}
     }
 }
+@media(max-width:350px){
+    .header{
+        height: 20vh;
+            &-image{
+                margin: 0;
+                font-size: 80px;
+                &:hover{
+                    transform: scale(1);
+                }
+                &--turn{
+                    margin: 0;
+                }
+            }
+            &-scrolling{
+                height: 15vh;
+            }
+            &-before{
+                height: 100vh;
+            }
+            &-title{
+                font-size: 1.3rem;
+            }
+            &-portfolio{
+                font-size: 1.3rem;
+            }
+            &-scrollin{
+                height: 15vh;
+            }
+            &-front{
+                font-size: 1.5rem;
+            }
+    }
+    @keyframes titleenter {
+        0%      {opacity: 0;
+                transform: 
+                    translateY(-200px)
+                    translateX(-130px)
+                    scale(0.4)}
+        30%      {opacity: 1;
+                transform: 
+                    translateY(-200px)
+                    translateX(-130px)
+                    scale(0.4)}        
+        50%     {transform: 
+                    translateY(-300px)
+                    translateX(-40px)
+                    scale(0.6)
+                }
+        55%     {transform: translateY(-350px)
+                rotateY(360deg)}
+                80%{transform: translateY(0);
+                    opacity: 1;}
+                    82%{opacity: 0;}
+                83%{opacity: 1;}
+                85%{opacity: 0;}
+                86%{opacity: 1;}
+                93%{opacity: 1;}
+                96%{opacity: 0;}
+                97%{opacity: 1;}
+                99%{opacity: 0;}
+                100%{opacity: 1;}
+    }
+}

@@ -133,3 +133,14 @@
         }
     }
 }
+@media(max-width:350px){
+    .home{
+        &-left{
+            margin-top: 1.5rem;
+        }
+        &-slogan{
+            top: -25px;
+            right: 10%;
+        }
+    }
+}

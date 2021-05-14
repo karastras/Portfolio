@@ -64,3 +64,32 @@
         }
     }
 }
+@media(max-width:350px){
+    .burger{
+        &-button{
+            height: 3.5rem;
+            width: 4rem;
+            top: 20px;
+            margin-right: .4rem;
+        }
+        &-style{
+            width: 1.8rem;
+            &--open{
+                &--1{
+                    transform: translateX(15%) rotate(45deg), ;
+                    width: 2.05rem;
+                    background-color: rgb(177, 38, 38);
+                }    
+                &--2{
+                    transform: translateX(100%);
+                    opacity: 0;
+                }    
+                &--3{
+                    transform: translate(15%) rotate(-45deg);
+                    width: 2.05rem;
+                    background-color: rgb(177, 38, 38);
+                }   
+        }
+    }
+}
+}
