@@ -25,10 +25,8 @@ function App() {
   return (
     <div className= { enter ? "App" : "App-welcome" } >
       <Switch>
-        <Route exact path='/' component={App}>
-          <Route render={() => (
-            <Header enter={enter} entered={entered}/>
-            )}/>
+        <Route exact path='/'>          
+          <Header enter={enter} entered={entered}/>
           {enter && <Main/>  }        
           {enter && <Footer/>  }            
           {enter && <ScrollTopButton /> }
