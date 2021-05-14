@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.c4ac28fc.chunk.css",
-    "main.js": "/static/js/main.ae6bfd1f.chunk.js",
-    "main.js.map": "/static/js/main.ae6bfd1f.chunk.js.map",
+    "main.css": "/static/css/main.c76e7aeb.chunk.css",
+    "main.js": "/static/js/main.64def5d0.chunk.js",
+    "main.js.map": "/static/js/main.64def5d0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d0605945.js",
     "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
-    "static/js/2.bbf89af3.chunk.js": "/static/js/2.bbf89af3.chunk.js",
-    "static/js/2.bbf89af3.chunk.js.map": "/static/js/2.bbf89af3.chunk.js.map",
+    "static/js/2.b7899332.chunk.js": "/static/js/2.b7899332.chunk.js",
+    "static/js/2.b7899332.chunk.js.map": "/static/js/2.b7899332.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c4ac28fc.chunk.css.map": "/static/css/main.c4ac28fc.chunk.css.map",
-    "static/js/2.bbf89af3.chunk.js.LICENSE.txt": "/static/js/2.bbf89af3.chunk.js.LICENSE.txt",
+    "static/css/main.c76e7aeb.chunk.css.map": "/static/css/main.c76e7aeb.chunk.css.map",
+    "static/js/2.b7899332.chunk.js.LICENSE.txt": "/static/js/2.b7899332.chunk.js.LICENSE.txt",
     "static/media/afpa.af42a2b0.jpg": "/static/media/afpa.af42a2b0.jpg",
     "static/media/astro.ca88cbfa.png": "/static/media/astro.ca88cbfa.png",
     "static/media/bac.c93afecf.png": "/static/media/bac.c93afecf.png",
-    "static/media/bye.e3ec09da.png": "/static/media/bye.e3ec09da.png",
     "static/media/cat.9f83ed2f.png": "/static/media/cat.9f83ed2f.png",
     "static/media/diplo.50c0047b.jpg": "/static/media/diplo.50c0047b.jpg",
+    "static/media/end.32ec8f60.png": "/static/media/end.32ec8f60.png",
+    "static/media/error.4b1cfddb.png": "/static/media/error.4b1cfddb.png",
     "static/media/glass.02f7c0a3.png": "/static/media/glass.02f7c0a3.png",
     "static/media/hammer.68b94bf2.jpg": "/static/media/hammer.68b94bf2.jpg",
     "static/media/hole.8fb0449d.png": "/static/media/hole.8fb0449d.png",
@@ -27,14 +28,15 @@
     "static/media/portfolio.87468344.jpg": "/static/media/portfolio.87468344.jpg",
     "static/media/prana.1e008a74.jpg": "/static/media/prana.1e008a74.jpg",
     "static/media/project.f02eb8cf.png": "/static/media/project.f02eb8cf.png",
+    "static/media/rocket.e3ec09da.png": "/static/media/rocket.e3ec09da.png",
     "static/media/run.488b7fc5.png": "/static/media/run.488b7fc5.png",
     "static/media/star.325448c0.png": "/static/media/star.325448c0.png",
     "static/media/unicorn.9861484d.png": "/static/media/unicorn.9861484d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d0605945.js",
-    "static/js/2.bbf89af3.chunk.js",
-    "static/css/main.c4ac28fc.chunk.css",
-    "static/js/main.ae6bfd1f.chunk.js"
+    "static/js/2.b7899332.chunk.js",
+    "static/css/main.c76e7aeb.chunk.css",
+    "static/js/main.64def5d0.chunk.js"
   ]
 }
