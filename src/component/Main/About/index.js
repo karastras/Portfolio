@@ -133,7 +133,7 @@ const About = () => {
                 </h3>
                 <p className="about-content-text">
                     Je suis mobile et ouvert à un emploi où qu'il soit, en France et à l'étranger.<br/>
-                    Vous trouverez en bas de page les différents moyens de me contacter.
+                    Vous trouverez en bas de page les différents moyens pour me contacter.
                 </p>
                 <p className="about-content-end">   
                     Merci d'avoir pris le temps de découvrir mon portfolio

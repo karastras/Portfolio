@@ -9,7 +9,20 @@
         flex-flow: column nowrap;
         justify-content: center;       
         border-radius: 10px;
-        background-color: 	#C0C0C0 ;
+        background: linear-gradient(
+            30deg,
+            #888888,
+            #C0C0C0,
+            #A0A0A0,
+            #C0C0C0,
+            #B0B0B0,
+            #DCDCDC,
+            #B0B0B0,
+            #C0C0C0,
+            #A0A0A0,
+            #C0C0C0,
+            #888888
+        );
         box-shadow: black 0.3em 0.2em 0.2em;
         position: fixed;
         top: 20px;
@@ -54,6 +67,7 @@
     .burger{
         &-button{
             display: flex;
+            top: 15px;
             &--open{
                 transition: all 0.4s linear;
                 background-color: transparent;    
@@ -64,7 +78,7 @@
         }
     }
 }
-@media(max-width:350px){
+@media(max-width:365px){
     .burger{
         &-button{
             height: 3.5rem;

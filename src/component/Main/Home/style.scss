@@ -36,7 +36,7 @@
             margin-top: 7%;
             right: 25%;
             color: black;
-            padding: 1em;
+            padding: 0.8em;
             border-radius: 15px;
             width: auto;
             text-align: left;
@@ -116,24 +116,30 @@
         &-right, &-left{
             width: 100%;            
         }
+        &-image{
+            width: 40%;
+        }
         &-foot{
             display: none;
         }
         &-slogan{
             margin-top: 10%;
-            right: 15%;
+            top: -10%;
             padding: 0.4em
         }
     }
    }
-@media(max-width:400px){
+@media(max-width:480px){
     .home{
+        &-image{
+            width: 50%;
+        }
         &-left{
             margin-top: 3rem;
         }
     }
 }
-@media(max-width:350px){
+@media(max-width:365px){
     .home{
         &-left{
             margin-top: 1.5rem;

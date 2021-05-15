@@ -240,12 +240,11 @@
 
 @media(max-width:1025px){
  .header{
-    height: 14vh;
         &-before{
             height: 100vh;
         }        
         &-scrolling{
-            height: 12vh;
+            height: 15vh;
         }        
         &-image, &-image--turn, &-image--unicorn{
             margin-right: 2rem;
@@ -279,6 +278,13 @@
 }
 @media(max-width:600px){
     .header{
+        height: 15vh;
+        &-before{
+            height: 100vh;
+        }
+        &-scrolling{
+            height: 12vh;
+        } 
         &-container{
             width: 100%;
             justify-content: flex-start;
@@ -296,10 +302,17 @@
 
 @media(max-width:400px){
     .header{
+        height: 18vh;
         text-align: center;
         margin: auto;
+        &-scrolling{
+            height: 15vh;
+        }
         &-image, &-image--turn, &-image--unicorn{
             margin-right: 0.5rem;
+        }
+        &-before{
+            height: 100vh;
         }
         &-pc{
             width: 90%;
@@ -339,9 +352,8 @@
                 100%{opacity: 1;}
     }
 }
-@media(max-width:350px){
+@media(max-width:365px){
     .header{
-        height: 20vh;
             &-image{
                 margin: 0;
                 font-size: 80px;
@@ -351,9 +363,6 @@
                 &--turn{
                     margin: 0;
                 }
-            }
-            &-scrolling{
-                height: 15vh;
             }
             &-before{
                 height: 100vh;
