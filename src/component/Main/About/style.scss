@@ -87,11 +87,11 @@
                     animation: go ease 3s;
                 }
                 &-enterAstro{
-                    animation: enterAstro 4s ease;
+                    animation:  enterAstro 7s ease;
                     
                 }
                 &-final{
-                    animation: astrofloat infinite 5s ease;
+                    animation: astrofloat infinite 4s ease;
                     
                 }
 
@@ -137,9 +137,11 @@
     100%{opacity: 0;}
 }
 @keyframes enterAstro{
-    from      {transform: 
+    0%      {transform: 
                 scale(0)}
-    to     {transform: 
+    20%      {transform: 
+                scale(0)}           
+    100%     {transform: 
                 scale(1)}
 }
 @keyframes astrofloat {

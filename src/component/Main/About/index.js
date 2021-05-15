@@ -11,7 +11,8 @@ import './style.scss'
 
 
 
-const About = () => {
+const About = ({isShake}) => {
+    
     
     // action on Start button
     const [ clickStart, setClickStart ] = useState(false)
@@ -58,15 +59,18 @@ const About = () => {
     // launch Go animation + switch picture with astro
     if(isGo){
         classStart = "about-content-go";
-        document.body.style.overflowX = 'hidden'; // fix issue in animation
-        setTimeout(() => { setAstroPic(true) }, 2500);
+        document.body.style.overflowX = 'hidden'; // fix issue in animation           
+        setTimeout(() => { 
+            setTimeout(() => {isShake() }, 2000); 
+            setTimeout (() => {setAstroPic(true) }, 2000)
+        })
     }
     // after Go animation, switch picture with astro and launch enterastro animation 
     if(astroPic){
         picture= astro
         classButtonGo = "about-content-hidden"
         classStart = "about-content-enterAstro"
-        setTimeout(() => { setIsAstro(true) }, 3500);
+        setTimeout(() => { setIsAstro(true) }, 6500);
     }
     // launch astrofloat animation
     if(isAstro){

@@ -57,22 +57,22 @@ const Header = ( { enter, entered } ) => {
     }, []);
     
     return (  // id="home" to fix issue activeclass on first render
-        <div id={`${small ? "" : "Home"}`} className={`header ${small ? "header-scrolling" : "header"} ${enter ? "header" : "header-before"}`}>
-            <div className={`${enter ? "header-container" : "header-before"}`}>
+        <div id={small ? "" : "Home"} className={`${enter ? "header" : "header-before"} ${small ? "header-scrolling" : "header"}`}>
+            <div className={enter ? "header-container" : "header-before"}>
                 <div className={classNameContainer}>
                     <img className={className} src={picture02} alt="" onClick={()=>{ toggle(); count02();}} onAnimationEnd={()=> toggle()}  />
-                    <img className={`${enter ? "header-enter" : "header-pc"}`}  src={picture01}  alt="" onClick={count01} />
+                    <img className={enter ? "header-enter" : "header-pc"}  src={picture01}  alt="" onClick={count01} />
                 </div>
                 <div className="header-content">
                     <div className="header-intro">
-                        <p className={`${enter ? "header-enter" : "header-text"}`} >
+                        <p className={enter ? "header-enter" : "header-text"} >
                             Hello User ! Moi c'est 
                         </p>
                         <div className="header-me">
-                            <h1 className={`${enter ? "header-title header-reduce" : "header-title"}`} >
+                            <h1 className={enter ? "header-title header-reduce" : "header-title"} >
                                 Jérôme Burrus
                             </h1>
-                            <p className={`${enter ? "header-portfolio" : "header-enter"}`} >
+                            <p className={enter ? "header-portfolio" : "header-enter"} >
                                 Portfolio
                             </p>
                         </div>
@@ -84,8 +84,8 @@ const Header = ( { enter, entered } ) => {
                         <span className="header-dev"> front</span> &#125; /&gt;
                     </p>           
                 </div>
-                <button className={`${enter ? "header-enter" : "header-button"}`} onClick={entered} >Go!</button>                
-                <div className={`${enter ? "header-nav" : "header-enter"}`} >
+                <button className={enter ? "header-enter" : "header-button"} onClick={entered} >Go!</button>                
+                <div className={enter ? "header-nav" : "header-enter"} >
                    <Burger /> 
                 </div>            
             </div>            

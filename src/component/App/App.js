@@ -12,7 +12,7 @@ import './style.scss';
 
 
 function App() {
-
+  let appClass = "App-welcome"
   // Display Welcome or rest of App
   const [enter, setEnter] = useState(false)
   // timer to see the little animation on the button
@@ -21,13 +21,23 @@ function App() {
     setEnter(true)
     }, 400);  
   }
+  if(enter){
+    appClass = "App"
+  }
   
+  const [ shake, setShake ] = useState(false)
+  const isShake = () => {
+    setShake(true)
+  }
+  if(shake){
+    appClass = "App-shake"
+  }
   return (
-    <div className= { enter ? "App" : "App-welcome" } >
+    <div className={appClass} >
       <Switch>
         <Route exact path='/'>          
           <Header enter={enter} entered={entered}/>
-          {enter && <Main/>  }        
+          {enter && <Main isShake={isShake}/>  }        
           {enter && <Footer/>  }            
           {enter && <ScrollTopButton /> }
         </Route>

@@ -6,13 +6,13 @@ import About from './About'
 
 import './style.scss'
 
-const Main = () => {
+const Main = ({isShake}) => {
     return (
         <div className="main">
             <Home />
             <Carrer />
             <Projects />
-            <About />
+            <About  isShake={isShake}/>
         </div>
     )
 }

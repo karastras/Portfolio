@@ -4,10 +4,39 @@
     margin: 0;
     background-color: #B0B0B0;
     font-family: 'Acme', sans-serif;
-     &-welcome{
-         height: 100vh;
-         font-family: 'Acme', sans-serif;
-         
-     }
+        &-welcome{
+            height: 100vh;
+            font-family: 'Acme', sans-serif;
+        }
+        &-shake{
+            animation: .1s linear .1s 10 shake;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            background-color: #B0B0B0;
+            font-family: 'Acme', sans-serif;
+        }
 }
 
+@keyframes shake {
+    0%      {transform: 
+        translateY(0)
+        translateX(0)
+        }
+    25%     {transform: 
+            translateY(10px)
+            translateX(15px)
+        }
+    50%     {transform: 
+            translateY(20px)
+            translateX(0px)
+        }
+    75%     {transform: 
+            translateY(10px)
+            translateX(-15px)
+        }
+    100%    {transform: 
+            translateY(0)
+            translateX(0)
+        } 
+}
