@@ -55,7 +55,20 @@
                 }
                 &-container{
                     margin: 2rem 0;
-                    background-color: #D3D3D3;
+                    background: linear-gradient(
+                        30deg,
+                        #888888,
+                        #C0C0C0,
+                        #A0A0A0,
+                        #C0C0C0,
+                        #B0B0B0,
+                        #DCDCDC,
+                        #B0B0B0,
+                        #C0C0C0,
+                        #A0A0A0,
+                        #C0C0C0,
+                        #888888
+                    );
                     width: 80%;
                     box-shadow: black 0.2rem 0.2rem 1rem;
                     border-radius: 15px;
