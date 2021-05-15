@@ -31,3 +31,20 @@
         }
     }
 }
+@media(max-width:350px){
+    .footer{
+        height: 20vh;
+        align-items: center;
+        &-content{
+            display: inline;            
+        }
+        &-icons{
+            display: flex;
+            justify-content: flex-end;            
+        }
+        &-Gmail{
+            margin-top: -.3rem;
+            font-size: 2.7rem;
+        }
+    }
+}

@@ -178,14 +178,17 @@
             &-final{
                 width: 200px
             }
+            &-alert{
+                margin-right: 0;
+            }
             &-goSection{
                 margin-right: 1rem;
-                flex-direction: column-reverse;
-                
+                flex-direction: column;
                 align-items: center;
+                
             }
-            &-alert{
-                margin: .5rem 0 0 0;
+            &-goButton{
+                margin-top: .3rem;
             }
         }
     }
@@ -197,9 +200,7 @@
                 font-size: .8rem;
             }
             &-alert{
-                margin-right: .2rem;
                 font-size: 2rem;
-                align-self: flex-end;
             }        
     }
 }

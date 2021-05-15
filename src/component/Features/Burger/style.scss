@@ -68,12 +68,12 @@
     .burger{
         &-button{
             height: 3.5rem;
-            width: 4rem;
-            top: 20px;
+            width: 3.5rem;
+            top: 10px;
             margin-right: .4rem;
         }
         &-style{
-            width: 1.8rem;
+            width: 1.5rem;
             &--open{
                 &--1{
                     transform: translateX(15%) rotate(45deg), ;
