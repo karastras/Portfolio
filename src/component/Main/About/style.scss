@@ -1,5 +1,5 @@
 .about{
-    margin-top: 6rem;
+    margin-top: 10rem;
         &-image{
             text-align: center;
         }
@@ -177,6 +177,15 @@
             }
             &-final{
                 width: 200px
+            }
+            &-goSection{
+                margin-right: 1rem;
+                flex-direction: column-reverse;
+                
+                align-items: center;
+            }
+            &-alert{
+                margin: .5rem 0 0 0;
             }
         }
     }

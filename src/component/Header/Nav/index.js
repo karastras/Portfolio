@@ -16,17 +16,17 @@ const Nav = ({open, closed}) => {
                     </Link>
                 </li>
                 <li>
-                    <Link className="nav-links" activeClass="active" spy smooth to="Career" onClick={closed} >
+                    <Link className="nav-links" activeClass="active" spy smooth offset={-120} to="Career" onClick={closed} >
                         Parcours
                     </Link>
                 </li>
                 <li >
-                    <Link className="nav-links" activeClass="active" spy smooth to="Projects" onClick={closed} >
+                    <Link className="nav-links" activeClass="active" spy smooth offset={-100} to="Projects" onClick={closed} >
                         Projets
                     </Link>
                 </li>
                 <li >
-                    <Link className="nav-links" activeClass="active" spy smooth to="About" onClick={closed} >
+                    <Link className="nav-links" activeClass="active" spy smooth offset={-120} to="About" onClick={closed} >
                         A mon sujet
                     </Link>
                 </li>
