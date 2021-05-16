@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d1da545.chunk.css",
-    "main.js": "/static/js/main.b200c392.chunk.js",
-    "main.js.map": "/static/js/main.b200c392.chunk.js.map",
+    "main.css": "/static/css/main.5a146681.chunk.css",
+    "main.js": "/static/js/main.9a098f3b.chunk.js",
+    "main.js.map": "/static/js/main.9a098f3b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d0605945.js",
     "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
     "static/js/2.e2a5ae3c.chunk.js": "/static/js/2.e2a5ae3c.chunk.js",
     "static/js/2.e2a5ae3c.chunk.js.map": "/static/js/2.e2a5ae3c.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.9d1da545.chunk.css.map": "/static/css/main.9d1da545.chunk.css.map",
+    "static/css/main.5a146681.chunk.css.map": "/static/css/main.5a146681.chunk.css.map",
     "static/js/2.e2a5ae3c.chunk.js.LICENSE.txt": "/static/js/2.e2a5ae3c.chunk.js.LICENSE.txt",
     "static/media/afpa.af42a2b0.jpg": "/static/media/afpa.af42a2b0.jpg",
     "static/media/astro.ca88cbfa.png": "/static/media/astro.ca88cbfa.png",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.d0605945.js",
     "static/js/2.e2a5ae3c.chunk.js",
-    "static/css/main.9d1da545.chunk.css",
-    "static/js/main.b200c392.chunk.js"
+    "static/css/main.5a146681.chunk.css",
+    "static/js/main.9a098f3b.chunk.js"
   ]
 }
