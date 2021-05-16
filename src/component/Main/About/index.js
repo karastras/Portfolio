@@ -33,6 +33,7 @@ const About = ({isShake}) => {
     let classStart = "about-content-img"
     let classButtonStart = "about-content-startButton"
     let classButtonGo = "about-content-hidden"
+    let endAltPicture = "avatar dans fusée rouge"
 
     // launch Start animation + go button appears after x time
     const start = () => {
@@ -56,7 +57,7 @@ const About = ({isShake}) => {
         setClickStart(false)
         setIsGo(true)        
     }    
-    // launch Go animation + switch picture with astro
+    // launch Go animation + prepare switch picture
     if(isGo){
         classStart = "about-content-go";
         document.body.style.overflowX = 'hidden'; // fix issue in animation           
@@ -70,11 +71,13 @@ const About = ({isShake}) => {
         picture= astro
         classButtonGo = "about-content-hidden"
         classStart = "about-content-enterAstro"
+        endAltPicture = "avatar astronaute flottant dans l'espace"
         setTimeout(() => { setIsAstro(true) }, 6500);
     }
     // launch astrofloat animation
     if(isAstro){
         classStart = "about-content-final"
+        document.body.style.overflowX = 'unset';
     }
     // count to change astro picture
     const count03 = () => {
@@ -155,7 +158,7 @@ const About = ({isShake}) => {
                     </div>
                     </div>
                     <div className="about-content-image">
-                        <img className={classStart} src={picture} onClick={isAstro ? count03 : undefined} alt=""/>
+                        <img className={classStart} src={picture} onClick={isAstro ? count03 : undefined} alt={endAltPicture}/>
                     </div>
                 </div>
             </div>

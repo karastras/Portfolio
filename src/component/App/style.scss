@@ -9,7 +9,7 @@
             font-family: 'Acme', sans-serif;
         }
         &-shake{
-            animation: .1s linear .1s 10 shake;
+            animation: .1s linear 10 shake;
             width: 100%;
             height: auto;
             margin: 0;
@@ -19,23 +19,25 @@
 }
 
 @keyframes shake {
-    0%      {transform: 
-        translateY(0)
-        translateX(0)
+    0%      {overflow: hidden; // to fix jump top screen issue during animation
+            transform: 
+            translateY(0)
+            translateX(0)
         }
     25%     {transform: 
             translateY(10px)
             translateX(15px)
         }
     50%     {transform: 
-            translateY(20px)
+            translateY(0px)
             translateX(0px)
         }
     75%     {transform: 
             translateY(10px)
             translateX(-15px)
         }
-    100%    {transform: 
+    100%    {overflow: hidden;
+            transform: 
             translateY(0)
             translateX(0)
         } 
