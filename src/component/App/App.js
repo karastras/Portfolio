@@ -12,6 +12,7 @@ import './style.scss';
 
 
 function App() {
+  
   let appClass = "App-welcome"
   // Display Welcome or rest of App
   const [enter, setEnter] = useState(false)

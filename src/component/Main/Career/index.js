@@ -128,7 +128,7 @@ const Carrer = () => {
                                 au débarquement ainsi qu'à l'espace bagages. La sécurité du client ainsi que celle de ses biens lui incombent.
                             </p>
                             <p>                            
-                                Ce travail à l'aéroport de Strasbourg s'est effectué au sein d'une équipe de 6 personnes gérant environ 10 000 
+                                Ce travail à l'aéroport de Strasbourg s'est effectué au sein d'une équipe de 6 personnes gérant environ 10000 
                                 passagers par an en demande d'assistance.
                             </p>
                         </div>
