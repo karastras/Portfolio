@@ -94,9 +94,7 @@
                     animation: astrofloat infinite 4s ease;
                     
                 }
-
         }
-
 }
 @keyframes start {
     0%      {transform: 
@@ -187,8 +185,7 @@
             &-goSection{
                 margin-right: 1rem;
                 flex-direction: column;
-                align-items: center;
-                
+                align-items: center;                
             }
             &-goButton{
                 margin-top: .3rem;
@@ -205,6 +202,6 @@
             &-alert{
                 font-size: 2rem;
             }        
+        }
     }
-}
 }

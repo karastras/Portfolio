@@ -1,51 +1,46 @@
 .footer{
-    height: 11vh;
     background-color: #797979;
+    height: auto;
+    padding: .5rem 0;
     display: flex;
     justify-content: flex-end;
-        &-content{
-            margin-right: 6rem;
-            display: flex;
-            align-items: center;           
+    &-content{
+                width: 80%;
+                margin: .5rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                margin-right: 1rem;
+        }
+        &-title{
+            margin-right: 2rem;
+            font-size: 1.5rem;
+            font-weight: bold;
         }
         &-icons{
+            margin-right: 1rem;
             display: flex;
             align-items: center;
         }
-        &-linked, &-Gmail{
+        &-linked{
             color: black;
-            font-size: 2rem;
-            margin: 0 1rem;
+            font-size: 2.5rem;            
         }
         &-Gmail{
-            font-size: 2.8rem;
+            color: black;
+            padding-top: 0.2rem;
+            font-size: 3.3rem;
+            margin-left: 1rem;
+        }
+        &-mail{
+            font-size: 1.2rem;
         }
 }
-
-@media(max-width:480px){
+@media(max-width:572px){
     .footer{
-        &-content{
-            margin-right: 1rem;
-        }
-        &-linked, &-Gmail{
-            margin: 0 .5rem;
-        }
-    }
-}
-@media(max-width:600px){
-    .footer{
-        height: 17vh;
-        align-items: center;
-        &-content{
-            display: inline;            
-        }
         &-icons{
-            display: flex;
-            justify-content: flex-end;        
-        }
-        &-Gmail{
-            margin-top: 0.2rem;
-            font-size: 2.7rem;
+            margin: 0;
         }
     }
 }

@@ -10,6 +10,9 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-content">
+                <h2 className="footer-title">
+                    Contact:
+                </h2>
                 <div className="footer-icons">
                     <a className="footer-linked" target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-burrus-28855b192/">
                         <FaLinkedin />
@@ -20,7 +23,6 @@ const Footer = () => {
                 </div>               
                 <div>
                     <p className="footer-text">
-                        E-mail:&nbsp;
                         <a className="footer-mail" href="mailto:burrus.jerome.oc@gmail.com">
                             burrus.jerome.oc@gmail.com
                         </a>
