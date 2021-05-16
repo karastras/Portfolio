@@ -26,9 +26,9 @@ const Carrer = () => {
             <div className="career-container">
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={opquast} alt=""/></div>                    
-                    <date className="career-item-date">
+                    <div className="career-item-date">
                         12/2020
-                    </date>
+                    </div>
                     <div className="career-item-container">
                         <div className="career-item-content">
                             <h3 className="career-item-title">
@@ -67,10 +67,10 @@ const Carrer = () => {
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={oclock} alt=""/></div>                    
-                    <date className="career-item-date">
+                    <div className="career-item-date">
                         05/2020-<br />
                         10/2020
-                    </date>
+                    </div>
                     <div className="career-item-container">
                         <div className="career-item-content">
                             <h3 className="career-item-title">
@@ -105,10 +105,10 @@ const Carrer = () => {
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={plane} alt=""/></div>                    
-                    <date className="career-item-date">
+                    <div className="career-item-date">
                         07/2013-<br />
                         11/2020
-                    </date>
+                    </div>
                     <div className="career-item-container">
                         <div className="career-item-content">
                             <h3 className="career-item-title">
@@ -136,10 +136,10 @@ const Carrer = () => {
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={hammer} alt=""/></div>                    
-                    <date className="career-item-date">
+                    <div className="career-item-date">
                         2008-<br />
                         2014
-                    </date>
+                    </div>
                     <div className="career-item-container">
                         <div className="career-item-content">
                             <h3 className="career-item-title">
@@ -166,9 +166,9 @@ const Carrer = () => {
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={afpa} alt=""/></div>                    
-                    <date className="career-item-date">
+                    <div className="career-item-date">
                         2012
-                    </date>
+                    </div>
                     <div className="career-item-container">
                         <div className="career-item-content">
                             <h3 className="career-item-title">
@@ -197,10 +197,10 @@ const Carrer = () => {
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={ikea} alt=""/></div>                    
-                    <date className="career-item-date">
+                    <div className="career-item-date">
                         2005-<br />
                         2010
-                    </date>
+                    </div>
                     <div className="career-item-container">
                         <div className="career-item-content">
                             <h3 className="career-item-title">
@@ -226,9 +226,9 @@ const Carrer = () => {
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={diplo} alt=""/></div>                    
-                    <date className="career-item-date">
+                    <div className="career-item-date">
                         2001
-                    </date>
+                    </div>
                     <div className="career-item-container">
                         <div className="career-item-content">
                             <h3 className="career-item-title">
