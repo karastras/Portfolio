@@ -1,5 +1,7 @@
 import React from 'react'
 
+import CareerCard from '../../Features/CareerCard'
+
 import run from '../../../assets/images/run.png'
 import opquast from '../../../assets/images/opquast.png'
 import badge from '../../../assets/images/badge.png'
@@ -13,8 +15,13 @@ import pcDiploma from '../../../assets/images/pcDiploma.png'
 import diplo from '../../../assets/images/diplo.jpg'
 
 import './style.scss'
+import { useInView } from '../../Features/UseInView'
 
 const Carrer = () => {
+    const[ ref, inView ] = useInView({
+        triggerOnce: true,
+        threshold: 0.1
+    }) 
     return (
         <div id="Career" className="career">
             <div className="career-image">
@@ -23,13 +30,13 @@ const Carrer = () => {
             <h1 className="career-title">
                 Mon parcours Pro
             </h1>
-            <div className="career-container">
+            <div ref={ref} className={inView ? "career-container anim1" : "hidden"}>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={opquast} alt=""/></div>                    
                     <div className="career-item-date">
                         12/2020
                     </div>
-                    <div className="career-item-container">
+                    <CareerCard >
                         <div className="career-item-content">
                             <h3 className="career-item-title">
                                 Opquast
@@ -63,7 +70,7 @@ const Carrer = () => {
                                 Consulter le certificat
                             </a>
                         </div>
-                    </div>
+                    </CareerCard>
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={oclock} alt=""/></div>                    
@@ -71,7 +78,7 @@ const Carrer = () => {
                         05/2020-<br />
                         10/2020
                     </div>
-                    <div className="career-item-container">
+                    <CareerCard >
                         <div className="career-item-content">
                             <h3 className="career-item-title">
                                 O'clock
@@ -100,8 +107,8 @@ const Carrer = () => {
                                 <li>● Élaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce</li>
                                 <li>● Spécialisation REACT</li>                                
                             </ul>
-                        </div>
-                    </div>
+                        </div>    
+                    </CareerCard >
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={plane} alt=""/></div>                    
@@ -109,7 +116,7 @@ const Carrer = () => {
                         07/2013-<br />
                         11/2020
                     </div>
-                    <div className="career-item-container">
+                    <CareerCard>
                         <div className="career-item-content">
                             <h3 className="career-item-title">
                                 Aéroport Strasbourg
@@ -132,7 +139,7 @@ const Carrer = () => {
                                 passagers par an en demande d'assistance.
                             </p>
                         </div>
-                    </div>
+                    </CareerCard>
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={hammer} alt=""/></div>                    
@@ -140,7 +147,7 @@ const Carrer = () => {
                         2008-<br />
                         2014
                     </div>
-                    <div className="career-item-container">
+                    <CareerCard>
                         <div className="career-item-content">
                             <h3 className="career-item-title">
                                 Auto-entrepreneur
@@ -162,14 +169,14 @@ const Carrer = () => {
                                 <li>● SAV</li>                                
                             </ul>
                         </div>
-                    </div>
+                    </CareerCard>
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={afpa} alt=""/></div>                    
                     <div className="career-item-date">
                         2012
                     </div>
-                    <div className="career-item-container">
+                    <CareerCard>
                         <div className="career-item-content">
                             <h3 className="career-item-title">
                                 AFPA - Strasbourg
@@ -193,7 +200,7 @@ const Carrer = () => {
                                 Sa mission, équiper cuisines et salles de bains pour les rendre fonctionnelles.
                             </p>
                         </div>
-                    </div>
+                    </CareerCard>
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={ikea} alt=""/></div>                    
@@ -201,7 +208,7 @@ const Carrer = () => {
                         2005-<br />
                         2010
                     </div>
-                    <div className="career-item-container">
+                    <CareerCard>
                         <div className="career-item-content">
                             <h3 className="career-item-title">
                                 IKEA Strasbourg
@@ -222,14 +229,14 @@ const Carrer = () => {
                                 <li>● Formation des nouvelles recrues</li>
                             </ul>
                         </div>
-                    </div>
+                    </CareerCard>
                 </div>
                 <div className="career-item">
                     <div className="career-line"><img className="career-imgOpquast" src={diplo} alt=""/></div>                    
                     <div className="career-item-date">
                         2001
                     </div>
-                    <div className="career-item-container">
+                    <CareerCard>
                         <div className="career-item-content">
                             <h3 className="career-item-title">
                                 BAC Economique et social
@@ -239,7 +246,7 @@ const Carrer = () => {
                             </p>                              
                         </div>
                         <img className="career-imgBac" src={bac} alt=""/>
-                    </div>
+                    </CareerCard>
                 </div>
             </div>
         </div>

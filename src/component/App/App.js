@@ -8,11 +8,12 @@ import Error404 from '../Error404';
 
 import ScrollTopButton from '../Features/ScrollTopButton';
 
+
 import './style.scss';
 
 
 function App() {
-  
+
   let appClass = "App-welcome"
   // Display Welcome or rest of App
   const [enter, setEnter] = useState(false)
@@ -36,13 +37,15 @@ function App() {
   return (
     <div className={appClass} >
       <Switch>
-        <Route exact path='/'>          
-          <Header enter={enter} entered={entered}/>
-          {enter && <Main isShake={isShake}/>  }        
-          {enter && <Footer/>  }            
-          {enter && <ScrollTopButton /> }
-        </Route>
-        <Route component={Error404}/>      
+          <Route exact path='/'>
+            <Header enter={enter} entered={entered}/>
+        
+            {enter && <Main isShake={isShake} /> }        
+            {enter && <Footer/>  }            
+            {enter && <ScrollTopButton /> }
+            
+          </Route>
+          <Route component={Error404}/>      
       </Switch>
     </div>
   );

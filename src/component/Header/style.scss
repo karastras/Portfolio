@@ -137,47 +137,8 @@
         &-burger{
             display: none;
         }
-}
-
-@keyframes turn {
-    from    {transform: rotate(0deg);}
-    to      {transform: rotate(360deg);}
-}
-@keyframes enter {
-    from    {opacity: 0;
-            transform: 
-                translateX(-300px)
-                translateY(500px)
-                scale(3)}
-    to      {opacity: 1;
-            transform: 
-                translateX(0)
-                translateY(0)
-                scale(1)}
-}
-
-@keyframes starenter {
-    from    {opacity: 0;
-            transform: 
-                translateX(-300px)
-                translateY(500px)
-                scale(3)}
-    to      {opacity: 1;
-            transform: 
-                translateX(0)
-                translateY(0)
-                scale(1)}
-}
-
-@keyframes naventer {
-    0%      {opacity: 0;
-            transform: translateX(300px)}
-    70%     {opacity: 0;
-            transform: translateX(300px)}
-    100%    {opacity: 1;
-            transform: translateX(0)}
-}
-
+    }
+    
 @keyframes titleenter {
     0%      {opacity: 0;
             transform: 
@@ -194,21 +155,57 @@
                 translateX(-40px)
                 scale(0.6)
             }
-    55%     {transform: translateY(-450px)
-            rotateY(360deg)}
-            80%{transform: translateY(0);
-                opacity: 1;}
-                82%{opacity: 0;}
-            83%{opacity: 1;}
-            85%{opacity: 0;}
-            86%{opacity: 1;}
-            93%{opacity: 1;}
-            96%{opacity: 0;}
-            97%{opacity: 1;}
-            99%{opacity: 0;}
-            100%{opacity: 1;}
+    55%     {transform: 
+                translateY(-450px)
+                rotateY(360deg)}
+    80%     {transform: translateY(0);
+            opacity: 1;}
+    82%     {opacity: 0;}
+    83%     {opacity: 1;}
+    85%     {opacity: 0;}
+    86%     {opacity: 1;}
+    93%     {opacity: 1;}
+    96%     {opacity: 0;}
+    97%     {opacity: 1;}
+    99%     {opacity: 0;}
+    100%    {opacity: 1;}
 }
-
+@keyframes turn {
+    from    {transform: rotate(0deg);}
+    to      {transform: rotate(360deg);}
+}
+@keyframes enter {
+    from    {opacity: 0;
+            transform: 
+                translateX(-300px)
+                translateY(500px)
+                scale(3)}
+    to      {opacity: 1;
+            transform: 
+                translateX(0)
+                translateY(0)
+                scale(1)}
+}
+@keyframes starenter {
+    from    {opacity: 0;
+            transform: 
+                translateX(-300px)
+                translateY(500px)
+                scale(3)}
+    to      {opacity: 1;
+            transform: 
+                translateX(0)
+                translateY(0)
+                scale(1)}
+}
+@keyframes naventer {
+    0%      {opacity: 0;
+            transform: translateX(300px)}
+    70%     {opacity: 0;
+            transform: translateX(300px)}
+    100%    {opacity: 1;
+            transform: translateX(0)}
+}
 @keyframes folioenter{
     0%      { margin-left: -700px;
             opacity: 0;}
@@ -217,19 +214,16 @@
     75%     { opacity: 0; }
     100%    { margin-left: 0px;}
 }
-
 @keyframes floating {
     0%      {transform: translateY(0)}
     50%     {transform: translateY(15px)}
     100%    {transform: translateY(0)}
 }
-
 @keyframes clickit {
     0%      {opacity: 0}
     80%     {opacity: 0}
     100%    {opacity: 1}
 }
-
 @keyframes text {
     0%      {opacity: 0}
     80%     {opacity: 0}
@@ -299,8 +293,7 @@
         }
     }
 }
-
-@media(max-width:400px){
+@media(max-width:405px){
     .header{
         height: 18vh;
         text-align: center;

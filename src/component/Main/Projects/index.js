@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Card from '../../Features/Card'
+import ProjectCard from '../../Features/ProjectCard'
 
 import prana from '../../../assets/images/prana.jpg'
 import travel from '../../../assets/images/travel.png'
@@ -10,9 +10,8 @@ import portfolio from '../../../assets/images/portfolio.jpg'
 
 import './style.scss'
 
+const Projects = () => { 
 
-
-const Projects = () => {
     return (
         <div id="Projects" className="project">
             <div className="project-image">
@@ -21,9 +20,9 @@ const Projects = () => {
             <h2 className="project-title">
                 Mes projets
             </h2>
-            <div className="project-cards"> 
+            <div className="project-cards">
                 <div className="project-card01">
-                    <Card  
+                    <ProjectCard  
                             title="Prana -site vitrine-"
                             picture={prana}
                             text="Site vitrine pour un institut de soin biologique. Le site est publié. L'historique du site est dans ses mentions légales."
@@ -33,7 +32,7 @@ const Projects = () => {
                             />
                 </div>
                 <div className="project-card02">
-                    <Card   title="My Travel Road"
+                    <ProjectCard   title="My Travel Road"
                             picture={travel}
                             text="Site créé en fin de formation O'clock dans les conditions réelles
                             d'entreprise dans une équipe de 5 personnes. Méthode Agile, Rôle: Product Owner. Site en
@@ -44,7 +43,7 @@ const Projects = () => {
                             />
                 </div>
                 <div className="project-card03">
-                    <Card   title="Portfolio"
+                    <ProjectCard   title="Portfolio"
                             picture={portfolio}
                             text="Dossier personnel dans lequel les acquis de formation et les acquis d'expérience
                             sont définis et démontrés en vue d'une reconnaissance par un établissement d'enseignement

@@ -12,7 +12,7 @@ const Main = ({isShake}) => {
             <Home />
             <Carrer />
             <Projects />
-            <About  isShake={isShake}/>
+            <About isShake={isShake}/>
         </div>
     )
 }

@@ -1,9 +1,10 @@
 import React from 'react'
 
+import { useInView } from '../UseInView'
+
 import './style.scss'
 
-
-const Card = ({
+const ProjectCard = ({
     title,
     picture,
     text,
@@ -12,8 +13,12 @@ const Card = ({
     url2,
     hiddenButton,
 }) => {
+    const[ ref, inView ] = useInView({
+        triggerOnce: true,
+        threshold: 0.5
+    }) 
     return (
-        <div className="card">
+        <div ref={ref} className={inView ? "card anim3" : "hidden"} >
             <div className="card-left">
                 <h2 className="card-title">
                     {title}
@@ -34,4 +39,4 @@ const Card = ({
     )
 }
 
-export default Card
+export default ProjectCard

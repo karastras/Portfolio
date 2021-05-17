@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="home-content">
                     <section className="home-left">
                         <p className="home-slogan">New challenger!</p>
-                        <img src={star} alt="" className="home-image" />
+                        <img src={star} alt="" className="home-image" data-delay="0s" />
                     </section>
                     <section className="home-right">
                         <h2 className="home-title">“ On ne peut apprendre le code Web, on ne peut qu’apprendre à coder ”</h2>
