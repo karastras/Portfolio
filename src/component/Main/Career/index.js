@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useInView } from '../../Features/UseInView'
 import CareerCard from '../../Features/CareerCard'
 
 import run from '../../../assets/images/run.png'
@@ -15,7 +15,6 @@ import pcDiploma from '../../../assets/images/pcDiploma.png'
 import diplo from '../../../assets/images/diplo.jpg'
 
 import './style.scss'
-import { useInView } from '../../Features/UseInView'
 
 const Carrer = () => {
     const[ ref, inView ] = useInView({
@@ -25,14 +24,16 @@ const Carrer = () => {
     return (
         <div id="Career" className="career">
             <div className="career-image">
-                <img className="career-img" src={run} alt=""/>
+                <img className="career-img" src={run} alt="avatar en train de courir avec un sourire et dispersant derrière lui sa malette et documents de travail"/>
             </div>
             <h1 className="career-title">
                 Mon parcours Pro
             </h1>
             <div ref={ref} className={inView ? "career-container anim1" : "hidden"}>
                 <div className="career-item">
-                    <div className="career-line"><img className="career-imgOpquast" src={opquast} alt=""/></div>                    
+                    <div className="career-line">
+                        <img className="career-imgOpquast" src={opquast} alt="icône opquast"/>
+                    </div>                    
                     <div className="career-item-date">
                         12/2020
                     </div>
@@ -48,7 +49,7 @@ const Carrer = () => {
                                 Score: 870/1000
                             </p>
                             <div className="career-item-badge">
-                                <a target='_blank' rel='noreferrer' href=" https://directory.opquast.com/fr/certificat/Q1OE2V/"><img className="career-badge" src={badge} alt=""/></a>
+                                <a target='_blank' rel='noreferrer' href=" https://directory.opquast.com/fr/certificat/Q1OE2V/"><img className="career-badge" src={badge} alt="badge de certification opquast niveau avancé 4 étoiles"/></a>
                             </div>                              
                         </div>
                         <div className="career-item-text">
@@ -73,7 +74,9 @@ const Carrer = () => {
                     </CareerCard>
                 </div>
                 <div className="career-item">
-                    <div className="career-line"><img className="career-imgOpquast" src={oclock} alt=""/></div>                    
+                    <div className="career-line">
+                        <img className="career-imgOpquast" src={oclock} alt="icône école o'clock"/>
+                    </div>                    
                     <div className="career-item-date">
                         05/2020-<br />
                         10/2020
@@ -89,7 +92,7 @@ const Carrer = () => {
                             <p className="career-item-description">
                                 La formation s’est déroulée selon le format téléprésentiel, de manière synchrone et avec une obligation de présence<br />
                             </p>   
-                            <img className="career-imgPcDiploma" src={pcDiploma} alt=""/>                      
+                            <img className="career-imgPcDiploma" src={pcDiploma} alt="avatar dans un ordinateur portable portant un couvre-chef de remise de diplôme et tenant un diplôme à la main avec un sourire"/>                      
                         </div>
                         <div className="career-item-text">
                             <h3 className="career-item-text-title">
@@ -111,7 +114,9 @@ const Carrer = () => {
                     </CareerCard >
                 </div>
                 <div className="career-item">
-                    <div className="career-line"><img className="career-imgOpquast" src={plane} alt=""/></div>                    
+                    <div className="career-line">
+                        <img className="career-imgOpquast" src={plane} alt="icone avion"/>
+                    </div>                    
                     <div className="career-item-date">
                         07/2013-<br />
                         11/2020
@@ -142,7 +147,9 @@ const Carrer = () => {
                     </CareerCard>
                 </div>
                 <div className="career-item">
-                    <div className="career-line"><img className="career-imgOpquast" src={hammer} alt=""/></div>                    
+                    <div className="career-line">
+                        <img className="career-imgOpquast" src={hammer} alt="icône marteau et clef anglaise"/>
+                    </div>                    
                     <div className="career-item-date">
                         2008-<br />
                         2014
@@ -172,7 +179,9 @@ const Carrer = () => {
                     </CareerCard>
                 </div>
                 <div className="career-item">
-                    <div className="career-line"><img className="career-imgOpquast" src={afpa} alt=""/></div>                    
+                    <div className="career-line">
+                        <img className="career-imgOpquast" src={afpa} alt="icône centre de formation Afpa"/>
+                    </div>                    
                     <div className="career-item-date">
                         2012
                     </div>
@@ -203,7 +212,9 @@ const Carrer = () => {
                     </CareerCard>
                 </div>
                 <div className="career-item">
-                    <div className="career-line"><img className="career-imgOpquast" src={ikea} alt=""/></div>                    
+                    <div className="career-line">
+                        <img className="career-imgOpquast" src={ikea} alt="icône magasin ikea"/>
+                    </div>                    
                     <div className="career-item-date">
                         2005-<br />
                         2010
@@ -222,6 +233,7 @@ const Carrer = () => {
                                 Fonction:
                             </h3>
                             <ul>
+                                <li>● Renseignements et conseils client</li>
                                 <li>● Responsable de surface de vente de trois boutiques</li>
                                 <li>● Suivi du chiffre dʼaffaire</li>
                                 <li>● Implantation des nouveautés</li>
@@ -232,7 +244,9 @@ const Carrer = () => {
                     </CareerCard>
                 </div>
                 <div className="career-item">
-                    <div className="career-line"><img className="career-imgOpquast" src={diplo} alt=""/></div>                    
+                    <div className="career-line">
+                        <img className="career-imgOpquast" src={diplo} alt="icône diplômé d'études"/>
+                    </div>                    
                     <div className="career-item-date">
                         2001
                     </div>
@@ -245,7 +259,7 @@ const Carrer = () => {
                                 Lycée Saint-André Colmar
                             </p>                              
                         </div>
-                        <img className="career-imgBac" src={bac} alt=""/>
+                        <img className="career-imgBac" src={bac} alt="tête de l'avatar dans un certificat d'étude avec le texte j'ai réussi"/>
                     </CareerCard>
                 </div>
             </div>

@@ -8,7 +8,6 @@ import Error404 from '../Error404';
 
 import ScrollTopButton from '../Features/ScrollTopButton';
 
-
 import './style.scss';
 
 

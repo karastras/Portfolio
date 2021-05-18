@@ -85,15 +85,16 @@ const About = ({isShake}) => {
     }
     if(astroClick >= 10){
         picture = end
+        endAltPicture = "avatar quittant la scène avec un regarde dédaigneux et lâchant le micro drrière lui"
         classStart= "about-content-img"
     }
     return (
         <div id="About" className="about">
             <div className="about-image">
-                    <img className="about-img" src={glass} alt=""/>
+                <img className="about-img" src={glass} alt="avatar tenant une loupe géante"/>
             </div>
             <h1 className="about-title">
-                    A mon sujet
+                A mon sujet
             </h1>
             <div className="about-content">
                 <h3 className="about-content-title">
@@ -133,7 +134,8 @@ const About = ({isShake}) => {
                     Mon but à terme est de devenir un&nbsp;
                     <span className="about-content-important">
                         développeur web fullstack
-                    </span> .
+                    </span>
+                    .
                 </p>
                 <h3 className="about-content-title">
                     Géolocalisation:

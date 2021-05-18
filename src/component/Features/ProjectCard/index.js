@@ -12,6 +12,7 @@ const ProjectCard = ({
     url1,
     url2,
     hiddenButton,
+    alt,
 }) => {
     const[ ref, inView ] = useInView({
         triggerOnce: true,
@@ -24,15 +25,27 @@ const ProjectCard = ({
                     {title}
                 </h2>
                 <div className="card-image">
-                    <img className="card-img" src={picture} alt=""/>
+                    <img className="card-img" src={picture} alt={alt}/>
                 </div>
             </div>            
             <div className="card-right">
-                <p className="card-text">{text}</p>
-                <p className="card-tech">{tech}</p>
+                <p className="card-text">
+                    {text}
+                </p>
+                <p className="card-tech">
+                    {tech}
+                </p>
                 <div className="card-buttons">
-                    <button className={hiddenButton ? "card-button-hidden" : "card-button"}><a className="card-button-link" target='_blank' rel='noreferrer' href={url1}>Visiter</a></button>
-                    <button className="card-button"><a className="card-button-link" target='_blank' rel='noreferrer' href={url2}>Code source</a></button>
+                    <button className={hiddenButton ? "card-button-hidden" : "card-button"}>
+                        <a className="card-button-link" target='_blank' rel='noreferrer' href={url1}>
+                            Visiter
+                        </a>
+                    </button>
+                    <button className="card-button">
+                        <a className="card-button-link" target='_blank' rel='noreferrer' href={url2}>
+                            Code source
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>

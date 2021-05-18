@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="home-content">
                     <section className="home-left">
                         <p className="home-slogan">New challenger!</p>
-                        <img src={star} alt="" className="home-image" data-delay="0s" />
+                        <img src={star} alt="avatar les bras levés avec un grand sourir sortant d'un trou comme s'il avait déchiré la page" className="home-image" data-delay="0s" />
                     </section>
                     <section className="home-right">
                         <h2 className="home-title">“ On ne peut apprendre le code Web, on ne peut qu’apprendre à coder ”</h2>
@@ -35,7 +35,7 @@ const Home = () => {
                     </section>
                 </div>
                 <div className="home-foot">
-                    <Link  className="home-scroll" smooth to="Career">
+                    <Link className="home-scroll" smooth offset={-120} to="Career">
                         <span className="home-scroll-icon">
                             <span className="home-scroll-icon-out">
                                 <span className="home-scroll-icon-in">

@@ -15,8 +15,9 @@ const Error404 = () => {
                     Cette page n'existe pas, merci de revenir à l'accueil avec le bouton ci-dessous
                 </div>
                 <a href='/'>
-
-                <button className="error-content-button">Back!</button>
+                    <button className="error-content-button">
+                        Back!
+                    </button>
                 </a>
             </div>
         </div>

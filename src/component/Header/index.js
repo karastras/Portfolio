@@ -13,7 +13,10 @@ let picture01 = PC
 let picture02 = star
 
 const Header = ( { enter, entered } ) => {
-    
+
+    let altHeader01 = "avatar de l'auteur saluant dans un ordinateur portable"
+    let altHeader02 = "tête de l'avatar dans une étoile. L'image tourne sur elle-même en cliquant dessus"
+
     //function to make a turn on image
     const [turn, setTurn] = useState(true)
     const toggle = () => {setTurn(!turn)}
@@ -34,11 +37,13 @@ const Header = ( { enter, entered } ) => {
     
     // condition to change picture
     if (pcClick >= 10){
-        picture01 = cat;        
+        picture01 = cat;
+        altHeader01 = "avatar assis à côté d'un Maneki-neko, chat porte-bonheur au japon, tenant tous les deux un koban, monnaie utilisée au Japon pendant l'ère Edo"       
     }
     if (starClick >= 20){
         picture02 = unicorn;
-        className = 'header-image--unicorn';        
+        className = 'header-image--unicorn';
+        altHeader02 = "avatar déguisé en licorne volante produisant un arc-en-ciel par son postérieur. humour"       
     }
     let classNameContainer = ""
     if(className === 'header-image--unicorn') {
@@ -60,8 +65,8 @@ const Header = ( { enter, entered } ) => {
         <div id={small ? "" : "Home"} className={`${enter ? "header" : "header-before"} ${small ? "header-scrolling" : "header"}`}>
             <div className={enter ? "header-container" : "header-before"}>
                 <div className={classNameContainer}>
-                    <img className={className} src={picture02} alt="" onClick={()=>{ toggle(); count02();}} onAnimationEnd={()=> toggle()}  />
-                    <img className={enter ? "header-enter" : "header-pc"}  src={picture01}  alt="" onClick={count01} />
+                    <img className={className} src={picture02} alt={altHeader02} onClick={()=>{ toggle(); count02();}} onAnimationEnd={()=> toggle()}  />
+                    <img className={enter ? "header-enter" : "header-pc"}  src={picture01}  alt={altHeader01} onClick={count01} />
                 </div>
                 <div className="header-content">
                     <div className="header-intro">
@@ -89,8 +94,7 @@ const Header = ( { enter, entered } ) => {
                    <Burger /> 
                 </div>            
             </div>            
-        </div>
-    
+        </div>    
     )
 }
 
