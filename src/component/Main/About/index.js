@@ -85,7 +85,7 @@ const About = ({isShake}) => {
     }
     if(astroClick >= 10){
         picture = end
-        endAltPicture = "avatar quittant la scène avec un regarde dédaigneux et lâchant le micro drrière lui"
+        endAltPicture = "avatar quittant la scène en lâchant le micro derrière lui, un micro drop"
         classStart= "about-content-img"
     }
     return (
