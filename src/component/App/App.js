@@ -10,7 +10,6 @@ import ScrollTopButton from '../Features/ScrollTopButton';
 
 import './style.scss';
 
-
 function App() {
 
   let appClass = "App-welcome"
