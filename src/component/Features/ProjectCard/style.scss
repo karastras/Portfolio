@@ -1,5 +1,6 @@
 .card{
     width: 60%;
+    min-height: 200px;
     margin: 10px;
     border-radius: 10px;
     background: linear-gradient(
@@ -20,7 +21,7 @@
     padding: 10px 0;    
     display: flex;
         &-left{
-            width: 40%;
+            width: 50%;
             margin-left: 1rem;
             display: flex;
             flex-direction: column;
@@ -31,12 +32,16 @@
             font-weight: bold;
             margin: .5rem;
         }
+        &-iframe {
+            width: 100%;
+            height: 100%;
+        }
         &-img{
             width: 100%;
             border-radius: 10px;        
         }
         &-right{
-            width: 60%;            
+            width: 50%;            
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -49,6 +54,7 @@
         &-tech{
             align-self: center;
             font-weight: bold;
+            margin: 1rem 0;
         }
         &-buttons{
             align-self: flex-end;

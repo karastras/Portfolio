@@ -7,6 +7,7 @@ import './style.scss'
 const ProjectCard = ({
     title,
     picture,
+    videoUrl,
     text,
     tech,
     url1,
@@ -24,9 +25,24 @@ const ProjectCard = ({
                 <h2 className="card-title">
                     {title}
                 </h2>
-                <div className="card-image">
-                    <img className="card-img" src={picture} alt={alt}/>
-                </div>
+                { videoUrl && (       
+                    <div className="card-iframe">           
+                    <iframe height= "100%"
+                            width ="100%"
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen src={videoUrl}>
+                    </iframe>
+                    </div> 
+                    )
+                }
+                { picture && (                    
+                    <div className="card-image">
+                        <img className="card-img" src={picture} alt={alt}/>
+                    </div>
+                        )
+                }                
             </div>            
             <div className="card-right">
                 <p className="card-text">

@@ -3,7 +3,6 @@ import React from 'react'
 import ProjectCard from '../../Features/ProjectCard'
 
 import prana from '../../../assets/images/prana.jpg'
-import travel from '../../../assets/images/travel.png'
 import project from '../../../assets/images/project.png'
 import portfolio from '../../../assets/images/portfolio.jpg'
 
@@ -33,10 +32,9 @@ const Projects = () => {
                 <div className="project-card02">
                     <ProjectCard   
                         title="My Travel Road"
-                        picture={travel}
-                        alt = "logo du site my travel road, représentant une montagne avec un bandeau à sa base portant le nom du site"
+                        videoUrl = "https://www.youtube.com/embed/H0ChNO5qkMM"
                         text="Site créé en fin de formation O'clock dans les conditions réelles
-                        d'entreprise dans une équipe de 5 personnes. Méthode Agile, Rôle: Product Owner. Site en
+                        d'entreprise dans une équipe de 5 personnes. Méthode Agile-Scrum, Rôle: Product Owner. Site en
                         cours de publication. Vous pouvez consulter la présentation de fin de formation."                        
                         tech="Front: REACT/REDDUX <-> Back: SYMFONY"
                         url1="https://www.youtube.com/watch?v=H0ChNO5qkMM&t=3s" 
