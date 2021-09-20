@@ -67,6 +67,7 @@
                 }
                 &-badge{
                     text-align: center;
+                    animation: heartbeat 3s infinite;
                 }
                 &-link{
                     margin-top: .5rem;
@@ -81,6 +82,38 @@
                 }
         }
 }
+
+@keyframes heartbeat {
+    
+        0%
+        {
+          transform: scale( 1 );
+        }
+        5%
+        {
+          transform: scale( 1.05 );
+        }
+        10%
+        {
+          transform: scale( 1 );
+        }
+        15%
+        {
+          transform: scale( 1.05 );
+        }
+        20%
+        {
+          transform: scale( 1 );
+        }
+        100%
+        {
+          transform: scale( 1 );
+        }
+      }
+
+
+// Media Queries
+
 @media(max-width:1025px){
     .career{
         &-imgOpquast, &-imgOclock, &-imgPlane{

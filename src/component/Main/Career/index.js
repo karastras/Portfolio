@@ -12,6 +12,7 @@ import afpa from '../../../assets/images/afpa.jpg'
 import ikea from '../../../assets/images/ikea.jpg'
 import bac from '../../../assets/images/bac.png'
 import pcDiploma from '../../../assets/images/pcDiploma.png'
+import pcStudent from '../../../assets/images/pcStudent.png'
 import diplo from '../../../assets/images/diplo.jpg'
 
 import './style.scss'
@@ -26,10 +27,50 @@ const Carrer = () => {
             <div className="career-image">
                 <img className="career-img" src={run} alt="avatar en train de courir avec un sourire et dispersant derrière lui sa malette et documents de travail"/>
             </div>
-            <h1 className="career-title">
+            <h2 className="career-title">
                 Mon parcours Pro
-            </h1>
+            </h2>
             <div ref={ref} className={inView ? "career-container anim1" : "hidden"}>
+            <div className="career-item">
+                    <div className="career-line">
+                        <img className="career-imgOpquast" src={diplo} alt="icône diplômé d'études"/>
+                    </div>                    
+                    <div className="career-item-date">
+                        07/2021
+                    </div>
+                    <CareerCard >
+                        <div className="career-item-content">
+                            <h3 className="career-item-title">
+                                Titre Professionnel Niveau V (Bac+2)
+                            </h3>
+                            <p className="career-item-description">
+                                Développeur Web et Web mobile
+                            </p>
+                            <p className="career-item-description">
+                                Délivré par <a target='_blank' rel='noreferrer' href="https://www.francecompetences.fr/recherche/rncp/31114/">le Ministère du Travail, de l'emploi et de L'insertion</a>
+                            </p>
+                            <img className="career-imgPcDiploma" src={pcDiploma} alt="avatar dans un ordinateur portable portant un couvre-chef de remise de diplôme et tenant un diplôme à la main avec un sourire"/>                                                    
+                        </div>
+                        <div className="career-item-text">
+                            <h4 className="career-item-text-title">
+                                Développer la partie front-end d'une application web ou web mobile en intégrant les recommandations de sécurité
+                            </h4>                       
+                            <ul>
+                                <li>● Réaliser un cahier des charges / Maquetter une application</li>
+                                <li>● Réaliser une interface utilisateur web statique et adaptable</li>
+                                <li>● Développer une interface utilisateur web dynamique</li>
+                            </ul>
+                            <h4 className="career-item-text-title">
+                                Développer la partie back-end d'une application web ou web mobile
+                            </h4>                       
+                            <ul>   
+                                <li>● Créer une base de données</li>
+                                <li>● Développer les composants d'accès aux données</li>
+                                <li>● Développer la partie back-end d'une application web ou web mobile</li>
+                            </ul>                       
+                        </div>
+                    </CareerCard>
+                </div>
                 <div className="career-item">
                     <div className="career-line">
                         <img className="career-imgOpquast" src={opquast} alt="icône opquast"/>
@@ -49,20 +90,20 @@ const Carrer = () => {
                                 Score: 870/1000
                             </p>
                             <div className="career-item-badge">
-                                <a target='_blank' rel='noreferrer' href=" https://directory.opquast.com/fr/certificat/Q1OE2V/"><img className="career-badge" src={badge} alt="badge de certification opquast niveau avancé 4 étoiles"/></a>
+                                <a target='_blank' rel='noreferrer' href=" https://directory.opquast.com/fr/certificat/Q1OE2V/"><img className="career-badge" src={badge} alt="élément cliquable renvoyant au site d'opquast représentant un badge de certification opquast niveau avancé 4 étoiles"/></a>
                             </div>                              
                         </div>
                         <div className="career-item-text">
-                        <h3 className="career-item-text-title">
+                            <h4 className="career-item-text-title">
                                 Certification:
-                            </h3>                            
+                            </h4>                            
                             <p>
-                            Il s'agit d'une certification indispensable pour quiconque touche de près ou de loin le monde du web.
-                            Née d'une réelle demande/besoin, le travail effectué par l'équipe d'Opquast est de nécessité publique !
+                                Il s'agit d'une certification indispensable pour quiconque touche de près ou de loin le monde du web.
+                                Née d'une réelle demande/besoin, le travail effectué par l'équipe d'Opquast est de nécessité publique !
                             </p>
-                            <h3 className="career-item-text-title">
+                            <h4 className="career-item-text-title">
                                 Niveau avancé:
-                            </h3>                            
+                            </h4>                            
                             <p>
                                 Excellente connaissance des règles qualité Web et du vocabulaire associé. Compétences réelles et appréciables pour
                                 participer à des projets Web.
@@ -92,12 +133,12 @@ const Carrer = () => {
                             <p className="career-item-description">
                                 La formation s’est déroulée selon le format téléprésentiel, de manière synchrone et avec une obligation de présence<br />
                             </p>   
-                            <img className="career-imgPcDiploma" src={pcDiploma} alt="avatar dans un ordinateur portable portant un couvre-chef de remise de diplôme et tenant un diplôme à la main avec un sourire"/>                      
+                            <img className="career-imgPcDiploma" src={pcStudent} alt="avatar dans un ordinateur portable portant un couvre-chef de remise de diplôme et tenant un diplôme à la main avec un sourire"/>                      
                         </div>
                         <div className="career-item-text">
-                            <h3 className="career-item-text-title">
+                            <h4 className="career-item-text-title">
                                 Les skills de la formation :
-                            </h3>
+                            </h4>
                             <ul>
                                 <li>● Langage HMTL / CSS / PHP / JS</li>
                                 <li>● Maquetter une application</li>
@@ -131,9 +172,9 @@ const Carrer = () => {
                             </p>                              
                         </div>
                         <div className="career-item-text">
-                            <h3 className="career-item-text-title">
+                            <h4 className="career-item-text-title">
                                 Fonction:
-                            </h3>
+                            </h4>
                             <p>
                                 L’agent APMR accompagne les personnes vivant avec un handicap dans différentes étapes aéroportuaires. 
                                 Il l’assiste à l’entrée de l'aéroport, le conduit à l'enregistrement, aux contrôles de sureté, à l’embarquement,
@@ -164,9 +205,9 @@ const Carrer = () => {
                             </p>                              
                         </div>
                         <div className="career-item-text">
-                            <h3 className="career-item-text-title">
+                            <h4 className="career-item-text-title">
                                 Services:
-                            </h3>
+                            </h4>
                             <ul>
                                 <li>● Démarchage de client</li>
                                 <li>● Réalisation des devis et croquis</li>
@@ -198,9 +239,9 @@ const Carrer = () => {
                             </p>                              
                         </div>
                         <div className="career-item-text">
-                            <h3 className="career-item-text-title">
+                            <h4 className="career-item-text-title">
                                 Formation de 9 mois:
-                            </h3>
+                            </h4>
                             <p>
                                 Le poseur de menuiseries et d'aménagements intérieurs est un décorateur des cuisines et
                                 des salles de bains.
@@ -229,9 +270,9 @@ const Carrer = () => {
                             </p>                              
                         </div>
                         <div className="career-item-text">
-                            <h3 className="career-item-text-title">
+                            <h4 className="career-item-text-title">
                                 Fonction:
-                            </h3>
+                            </h4>
                             <ul>
                                 <li>● Renseignements et conseils client</li>
                                 <li>● Responsable de surface de vente de trois boutiques</li>
