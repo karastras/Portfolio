@@ -51,6 +51,14 @@
             text-align: center;
             font-size: 1.2rem;
         }
+        &-logos{
+            display: flex;
+            justify-content: center;
+        }
+        &-logo{
+            width: 2.5rem;
+            margin: 0 .5rem;
+        }
         &-tech{
             align-self: center;
             font-weight: bold;

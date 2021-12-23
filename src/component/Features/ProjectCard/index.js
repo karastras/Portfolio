@@ -10,6 +10,12 @@ const ProjectCard = ({
     videoUrl,
     text,
     tech,
+    logo1,
+    alt1,
+    logo2,
+    alt2,
+    logo3,
+    alt3,
     url1,
     url2,
     hiddenButton,
@@ -41,13 +47,18 @@ const ProjectCard = ({
                     <div className="card-image">
                         <img className="card-img" src={picture} alt={alt}/>
                     </div>
-                        )
+                    )
                 }                
             </div>            
             <div className="card-right">
                 <p className="card-text">
                     {text}
                 </p>
+                    <div className='card-logos'>
+                        { logo1 ? <img className='card-logo'src={logo1} alt={alt1}/> : null }
+                        { logo2 ? <img className='card-logo'src={logo2} alt={alt2}/> : null }
+                        { logo3 ? <img className='card-logo'src={logo3} alt={alt3}/> : null }
+                    </div>
                 <p className="card-tech">
                     {tech}
                 </p>

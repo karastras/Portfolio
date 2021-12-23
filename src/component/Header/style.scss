@@ -77,6 +77,12 @@
         &-dev{
             font-weight: bold;
         }
+        &-devDollar{
+            font-size: 2rem;
+        }
+        &-devSkill, &-devDollar{
+            color: #0f2fe7;
+        }
         &-me{
             align-self: flex-end;
             display: flex;

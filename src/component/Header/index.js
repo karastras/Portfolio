@@ -85,8 +85,15 @@ const Header = ( { enter, entered } ) => {
                     <p className={`${enter ? "header-enter" : "header-text"}`} >
                         et je suis &lt;
                         <span className="header-front">Developer </span>
-                        props=&#x7B;
-                        <span className="header-dev"> front</span> &#125; /&gt;
+                        front=&#x7B;
+                        <span className="header-dev">ReactJS</span> &#125; /&gt;
+                    </p>
+                    <p className={`${enter ? "header-enter" : "header-text"}`} >
+                        <span className="header-devDollar">$</span>
+                        <span className="header-devSkill">newSkill </span>
+                        = back(
+                        <span className="header-dev">Symfony</span>
+                        )
                     </p>           
                 </div>
                 <button className={enter ? "header-enter" : "header-button"} onClick={entered} >Go!</button>                

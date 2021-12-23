@@ -1,18 +1,26 @@
 .about{
     min-height: 100vh;
     margin-top: 10rem;
-        &-image{
-            text-align: center;
-        }
-        &-img{
-            width: 170px;
-        }
-        &-title{
-            text-align: center;
-            font-size: 2.2rem;
-            font-weight: bold;
-            position: relative;
-        }
+    &-image{
+        text-align: center;
+    }
+    &-img{
+        width: 170px;
+    }
+    &-title{
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+        position: relative;
+    }
+    &-reactLogo{
+        width: 1.7rem;
+        margin: 0 .5rem -.5rem .5rem
+    }
+    &-symfonyLogo{
+        width: 1.5rem;
+        margin: 0 .5rem -.3rem .5rem
+    }
         &-content{
                 &-title{
                     font-size: 1.5rem;
