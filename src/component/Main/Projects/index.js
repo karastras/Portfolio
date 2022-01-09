@@ -84,7 +84,7 @@ const Projects = () => {
                         alt1="logo symfony"
                         tech="Réalisé avec: Symfony"
                         url1="http://3.143.236.6/"
-                        url2="https://github.com/karastras/O-flix-O-faq-full-Symfony" 
+                        url2="https://github.com/karastras/MyFlix-O-faq-full-Symfony" 
                     />               
                 </div>                                           
             </div>
