@@ -140,7 +140,7 @@ const About = ({ isShake }) => {
                     <br />
 
                    
-                    J'ai également suivis une formation sur la technoligie&nbsp;
+                    J'ai également suivis une formation sur la technologie&nbsp;
                     <span className="about-content-important">
                         Back&nbsp;
                         <img className="about-symfonyLogo" src={symfony} alt="React Logo"/>
