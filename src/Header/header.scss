@@ -1,0 +1,411 @@
+.header{
+    height: 17vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: #B0B0B0;    
+    z-index: 3;
+    transition: ease-in 0.3s;
+        &-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        &-scrolling{
+            background-color: #989898;
+            box-shadow: 0 0 10px rgba(0,0,0,1);
+            transition: linear .3s;
+            height: 12vh;
+        }
+        &-before{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: burlywood;
+        }
+        &-enter{
+            display: none;
+        }
+        &-picture{
+            animation: floating infinite 5s ease 3.5s;
+            align-self: flex-start;
+        }
+        &-image{
+            width: 100px;
+            transition: transform .5s;
+            &:hover{
+                transform: scale(1.2);
+            }
+            &--turn{
+                animation: turn .3s;
+                width: 100px;
+            }
+            &--unicorn{
+                z-index: 4;
+                width: 100px;
+                animation: enter 3s;
+                transition: transform .5s;
+                user-select: none; // fix blue-box issue when unicorn appears
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        &-content{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        &-intro{
+            display: flex;
+            align-items: flex-end;
+        }
+        &-text{
+            margin-top: 1rem;
+            animation: text 6s;
+            font-size: 1.5rem;
+        }
+        &-front{
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: rgb(10, 161, 91);
+        }
+        &-dev{
+            font-weight: bold;
+        }
+        &-devDollar{
+            font-size: 2rem;
+        }
+        &-devSkill, &-devDollar{
+            color: #0f2fe7;
+        }
+        &-me{
+            align-self: flex-end;
+            display: flex;
+        }
+        &-title{
+            font-family: 'Sedgwick Ave Display', cursive;
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin: 0 .3rem -4px;
+            animation: ease 5s titleenter ;        
+        }
+        &-portfolio{
+            font-family: 'Qwigley' , cursive;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            margin: 0 .3rem -4px;
+            animation: ease 2.5s folioenter ;
+        }
+        &-button{
+            text-align: center;
+            display: inline-block;
+            margin-top: 2rem;
+            font-weight: bold;
+            padding: 10px 0 10px 10px ;
+            background-color: lightgray;
+            text-shadow: -1px -1px black, 1px 1px white;
+            color: gray;
+            border-radius: 7px;
+            box-shadow: 0 .2em gray; 
+            cursor: pointer;
+            animation: clickit 7.5s;
+            font-family: 'Press Start 2P', cursive;            
+            font-size: 1.5rem;
+            &:active {
+                box-shadow: none;
+                position: relative;
+                top: .2em;
+            }
+        }
+        &-nav{
+            animation: naventer 3.5s;
+            display: flex;
+            flex-wrap: nowrap;
+            color: rgb(95, 87, 87);
+        }
+        &-link{
+            padding: 10px;
+            font-weight: bold;
+            transition: transform .5s, color .5s;
+            &:hover{
+                transform: scale(1.5) translateY(-2px);
+                color: white;                
+            }
+        }
+        &-burger{
+            display: none;
+        }
+    }
+    
+@keyframes titleenter {
+    0%      {opacity: 0;
+            transform: 
+                translateY(-270px)
+                translateX(-190px)
+                scale(0.4)}
+    30%      {opacity: 1;
+            transform: 
+                translateY(-270px)
+                translateX(-190px)
+                scale(0.4)}        
+    50%     {transform: 
+                translateY(-400px)
+                translateX(-40px)
+                scale(0.6)
+            }
+    55%     {transform: 
+                translateY(-450px)
+                rotateY(360deg)}
+    80%     {transform: translateY(0);
+            opacity: 1;}
+    82%     {opacity: 0;}
+    83%     {opacity: 1;}
+    85%     {opacity: 0;}
+    86%     {opacity: 1;}
+    93%     {opacity: 1;}
+    96%     {opacity: 0;}
+    97%     {opacity: 1;}
+    99%     {opacity: 0;}
+    100%    {opacity: 1;}
+}
+@keyframes turn {
+    from    {transform: rotate(0deg);}
+    to      {transform: rotate(360deg);}
+}
+@keyframes enter {
+    from    {opacity: 0;
+            transform: 
+                translateX(-300px)
+                translateY(500px)
+                scale(3)}
+    to      {opacity: 1;
+            transform: 
+                translateX(0)
+                translateY(0)
+                scale(1)}
+}
+@keyframes starenter {
+    from    {opacity: 0;
+            transform: 
+                translateX(-300px)
+                translateY(500px)
+                scale(3)}
+    to      {opacity: 1;
+            transform: 
+                translateX(0)
+                translateY(0)
+                scale(1)}
+}
+@keyframes naventer {
+    0%      {opacity: 0;
+            transform: translateX(300px)}
+    70%     {opacity: 0;
+            transform: translateX(300px)}
+    100%    {opacity: 1;
+            transform: translateX(0)}
+}
+@keyframes folioenter{
+    0%      { margin-left: -700px;
+            opacity: 0;}
+    40%     { margin-left: -700px;
+            opacity: 0; }
+    75%     { opacity: 0; }
+    100%    { margin-left: 0px;}
+}
+@keyframes floating {
+    0%      {transform: translateY(0)}
+    50%     {transform: translateY(15px)}
+    100%    {transform: translateY(0)}
+}
+@keyframes clickit {
+    0%      {opacity: 0}
+    80%     {opacity: 0}
+    100%    {opacity: 1}
+}
+@keyframes text {
+    0%      {opacity: 0}
+    80%     {opacity: 0}
+    100%    {opacity: 1}
+}
+
+// Media queries
+
+@media(max-width:1025px){
+ .header{
+        &-before{
+            height: 100vh;
+        }        
+        &-scrolling{
+            height: 15vh;
+        }        
+        &-image, &-image--turn, &-image--unicorn{
+            margin-right: 2rem;
+        }        
+        &-title{
+            font-size: 2rem;
+        }
+        &-reduce{
+            font-size: 1.5rem;
+        }
+        &-me{
+            align-items: baseline;
+        }
+        
+ }
+ 
+ @keyframes folioenter{
+    0%      { transform:
+        translateY(-25px);
+            opacity: 0;}
+            50%      { transform:
+                translateY(-25px);
+                    opacity: 0;}
+    100%    { }
+}
+@keyframes naventer {
+    0%      {opacity: 0;}
+    70%     {opacity: 0;}
+    100%    {opacity: 1;}
+} 
+}
+@media(max-width:600px){
+    .header{
+        height: 15vh;
+        &-before{
+            height: 100vh;
+        }
+        &-scrolling{
+            height: 12vh;
+        } 
+        &-container{
+            width: 100%;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        &-me{
+            display: inline;
+        }
+        &-portfolio{
+            font-size: 2.5rem;
+            margin: 0.5rem 0.5rem 1rem 0.5rem;    
+        }
+    }
+}
+@media(max-width:405px){
+    .header{
+        height: 18vh;
+        text-align: center;
+        margin: auto;
+        &-scrolling{
+            height: 15vh;
+        }
+        &-image, &-image--turn, &-image--unicorn{
+            margin-right: 0.5rem;
+        }
+        &-before{
+            height: 100vh;
+        }
+        &-pc{
+            width: 90%;
+        }
+        &-text{
+            font-size: 1rem;
+        }
+    }
+    @keyframes titleenter {
+        0%      {opacity: 0;
+                transform: 
+                    translateY(-230px)
+                    translateX(-140px)
+                    scale(0.4)}
+        30%      {opacity: 1;
+                transform: 
+                    translateY(-230px)
+                    translateX(-140px)
+                    scale(0.4)}        
+        50%     {transform: 
+                    translateY(-400px)
+                    translateX(-40px)
+                    scale(0.6)
+                }
+        55%     {transform: translateY(-450px)
+                rotateY(360deg)}
+                80%{transform: translateY(0);
+                    opacity: 1;}
+                    82%{opacity: 0;}
+                83%{opacity: 1;}
+                85%{opacity: 0;}
+                86%{opacity: 1;}
+                93%{opacity: 1;}
+                96%{opacity: 0;}
+                97%{opacity: 1;}
+                99%{opacity: 0;}
+                100%{opacity: 1;}
+    }
+}
+@media(max-width:365px){
+    .header{
+            &-image{
+                margin: 0;
+                font-size: 80px;
+                &:hover{
+                    transform: scale(1);
+                }
+                &--turn{
+                    margin: 0;
+                }
+            }
+            &-before{
+                height: 100vh;
+                justify-content: flex-start;
+            }
+            &-title{
+                font-size: 1.3rem;
+            }
+            &-portfolio{
+                font-size: 1.3rem;
+            }
+            &-scrollin{
+                height: 15vh;
+            }
+            &-front{
+                font-size: 1.5rem;
+            }
+    }
+    @keyframes titleenter {
+        0%      {opacity: 0;
+                transform: 
+                    translateY(-200px)
+                    translateX(-130px)
+                    scale(0.4)}
+        30%      {opacity: 1;
+                transform: 
+                    translateY(-200px)
+                    translateX(-130px)
+                    scale(0.4)}        
+        50%     {transform: 
+                    translateY(-300px)
+                    translateX(-40px)
+                    scale(0.6)
+                }
+        55%     {transform: translateY(-350px)
+                rotateY(360deg)}
+                80%{transform: translateY(0);
+                    opacity: 1;}
+                    82%{opacity: 0;}
+                83%{opacity: 1;}
+                85%{opacity: 0;}
+                86%{opacity: 1;}
+                93%{opacity: 1;}
+                96%{opacity: 0;}
+                97%{opacity: 1;}
+                99%{opacity: 0;}
+                100%{opacity: 1;}
+    }
+}
