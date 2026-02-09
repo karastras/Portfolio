@@ -1,0 +1,35 @@
+.app {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #B0B0B0;
+    font-family: 'Google Sans', sans-serif;
+}
+.shake{
+    animation: .1s linear 10 shake;
+}
+
+@keyframes shake {
+    0%      {overflow: hidden; // to fix jump top screen issue during animation
+            transform: 
+            translateY(0)
+            translateX(0)
+        }
+    25%     {transform: 
+            translateY(10px)
+            translateX(15px)
+        }
+    50%     {transform: 
+            translateY(0px)
+            translateX(0px)
+        }
+    75%     {transform: 
+            translateY(10px)
+            translateX(-15px)
+        }
+    100%    {overflow: hidden;
+            transform: 
+            translateY(0)
+            translateX(0)
+        } 
+}

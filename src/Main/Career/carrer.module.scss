@@ -1,0 +1,221 @@
+.container {
+    min-height: 100vh;
+    margin-top: 9rem;
+}
+
+.image {
+    text-align: center;
+}
+
+.img {
+    width: 200px;
+    margin: -2rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.item {
+    display: flex;
+}
+
+.line {
+    position: relative;
+    background-color: white;
+    width: 5px;
+    min-height: 30vh;
+    margin: 0 3rem;
+}
+
+.content {
+    box-shadow: inset 0 0 20px #000000;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    padding: 30px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgOpquast,
+.imgOclock,
+.imgPlane {
+    position: absolute;
+    left: -38px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.itemDate {
+    width: 5%;
+    font-weight: bold;
+    margin: 2rem 1rem 0 0;
+}
+
+.itemBadge {
+    text-align: center;
+    animation: heartbeat 3s infinite;
+}
+
+.itemContent {
+    margin: 0.5rem 1rem;
+    text-align: center;
+    width: 40%;
+}
+
+.itemTitle {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.itemDescription {
+    margin-top: .5rem;
+}
+
+.imgPcDiploma {
+    width: 17%;
+}
+
+.itemText {
+    margin: 0.5rem;
+    width: 60%;
+}
+
+.itemTextTitle {
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.itemLink {
+    margin-top: .5rem;
+}
+
+.imgBac {
+    width: 20%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.anim1 {
+    animation: 1s anim1;
+} 
+
+@keyframes anim1 {
+    from {              
+        opacity: 0;
+    }
+    to {             
+        opacity: 1;
+    }
+}
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    5% {
+        transform: scale(1.05);
+    }
+
+    10% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.05);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+// Media Queries
+
+@media(max-width:1025px) {
+    .career {
+
+        &-imgOpquast,
+        &-imgOclock,
+        &-imgPlane {
+            width: 40px;
+            height: 40px;
+            left: -18px
+        }
+
+        &-line {
+            margin: 0 1.5rem 0 0;
+            min-height: auto;
+        }
+
+        &-item {
+            &-container {
+                margin: 3rem 0 1rem 0;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            &-date {
+                margin: .5rem 0 0 0;
+            }
+
+            &-content {
+                width: 95%;
+                border-bottom: solid rgb(165, 165, 165) 3px;
+            }
+
+            &-description {
+                padding: 10px 0;
+                ;
+            }
+
+            &-text {
+                margin-top: 0;
+                width: 95%;
+                padding: 10px;
+            }
+
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .career {
+        &-line {
+            margin-right: .5rem;
+        }
+
+        &-item {
+            &-date {
+                margin-left: 1.5rem;
+                position: absolute;
+            }
+        }
+    }
+}
+
+@media(max-width:365px) {
+    .career {
+        &-container {
+            padding: 25px 25px 0 25px;
+        }
+
+        &-line {
+            margin: 0;
+        }
+    }
+}

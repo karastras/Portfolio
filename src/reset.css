@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.25;
 }
 ol, ul {
 	list-style: none;
@@ -45,5 +45,8 @@ table {
 a{
 	display:inline-block;
 	color: blue;
-	font-weight: bold;
+	text-decoration: underline;
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+	}
 }

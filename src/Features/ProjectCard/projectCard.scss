@@ -5,17 +5,17 @@
     border-radius: 10px;
     background: linear-gradient(
         30deg,
-        #888888,
-        #C0C0C0,
-        #A0A0A0,
-        #C0C0C0,
-        #B0B0B0,
-        #DCDCDC,
-        #B0B0B0,
-        #C0C0C0,
-        #A0A0A0,
-        #C0C0C0,
-        #888888
+        black,
+        #2b2929,
+        #423f3f,
+        #2b2929,
+        #5c5757,
+        #adacac,
+        #5c5757,
+        #2b2929,
+        #423f3f,
+        #2b2929,
+        black
     );
     box-shadow: black 0 0 1rem;
     padding: 10px 0;    
@@ -31,6 +31,7 @@
             font-size: 1.8rem;
             font-weight: bold;
             margin: .5rem;
+            color: white;
         }
         &-iframe {
             width: 100%;
@@ -50,6 +51,7 @@
             margin: 2rem 1rem 1rem 2rem;
             text-align: center;
             font-size: 1.2rem;
+            color: white;
         }
         &-logos{
             display: flex;
@@ -69,20 +71,39 @@
             margin: 0 3rem 1rem 0;
         }
         &-button{
-            font-family: 'Acme', sans-serif;
+            font-family: 'Google Sans', sans-serif;
             margin-left: 4rem;
             border-radius: 5px;
-            background-color: rgb(184, 184, 184);
-            box-shadow: rgb(59, 59, 59) 0.1rem 0.1rem 0.1rem;
+            box-shadow: rgb(230, 214, 214) 0.1rem 0.1rem 0.1rem;
             &-hidden{
                 display: none;
             }
             &-link{
-                color: white;
+                color: black;
                 font-size: 1rem;
-                text-shadow: black 0.1rem 0.1rem 0.1rem;
+                text-decoration: none;
             }
         }
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.anim3{
+    animation: .5s ease anim3;
+}
+
+
+@keyframes anim3 {
+    from {
+              transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+              transform: translateX(0);
+      opacity: 1;
+    }
 }
 
 // Media Queries

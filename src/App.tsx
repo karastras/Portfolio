@@ -5,11 +5,10 @@ import Main from './Main/Main'
 import Footer from './Footer/Footer'
 import Error404 from './Error404/Error404'
 import ScrollTopButton from './Features/ScrollTopButton/ScrollTopButton'
-import './app.scss'
+import styles from './app.module.scss'
 
 function App() {
 
-  let appClass = "App-welcome"
   // Display Welcome or rest of App
   const [enter, setEnter] = useState(false)
   // end time appears the button Go
@@ -19,14 +18,11 @@ function App() {
     }, 400);  
   }
   
-  const [ shake, setShake ] = useState(false)
-  const isShake = () => {setShake(true)}
-
-  if(enter){appClass = "App"}
-  if(shake){appClass = "App-shake"}
+  const [ shaked, setShaked ] = useState(false)
+  const isShake = () => {setShaked(true)}
 
   return (
-    <div className={appClass} >
+    <div className={ shaked ? `${styles.app} ${styles.shake}` : styles.app} >
       <Routes>   
           <Route path='/' element={
             <> 

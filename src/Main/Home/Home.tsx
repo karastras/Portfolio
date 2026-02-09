@@ -10,7 +10,6 @@ const Home = () => {
             <div className="home-container">
                 <div className="home-content">
                     <section className="home-left">
-                        <p className="home-slogan">New challenger!</p>
                         <img src={star} alt="avatar les bras levés avec un grand sourir sortant d'un trou comme s'il avait déchiré la page" className="home-image" data-delay="0s" />
                     </section>
                     <section className="home-right">
@@ -41,7 +40,7 @@ const Home = () => {
                                 </span>
                         </span>
                         </span>
-                        <h2 className="home-foot-text">La suite</h2>
+                        
                     </Link>
                 </div>
             </div>

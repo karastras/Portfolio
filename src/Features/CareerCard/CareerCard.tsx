@@ -1,6 +1,6 @@
 import { useInView } from '../UseInView/UseInView'
 
-import './careerCard.scss'
+import styles from './careerCard.module.scss'
 
 const CareerCard = ({children}: React.PropsWithChildren) => {
     const[ ref, inView ] = useInView({
@@ -8,7 +8,7 @@ const CareerCard = ({children}: React.PropsWithChildren) => {
         threshold: 0.5
     }) 
     return (
-        <div ref={ref as unknown as React.RefObject<HTMLDivElement>} className={inView ? 'careerCard anim2': 'hidden'} >
+        <div ref={ref as unknown as React.RefObject<HTMLDivElement>} className={inView ? `${styles.careerCard} ${styles.anim2}` : styles.hidden} >
             {children}
         </div>
     )

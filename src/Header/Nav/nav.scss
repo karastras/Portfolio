@@ -10,12 +10,13 @@
 
     &-links{
         align-self: baseline;
-        font-family: 'Acme', sans-serif;
+        font-family: 'Google Sans', sans-serif;
         padding: 5px 10px;
         margin: 0 5px;
         color: #585858;
         font-weight: bold;
         transition: all .5s;
+        text-decoration: none;
             &:hover{
                 transform: scale(1.5) translateY(-2px);           
             }

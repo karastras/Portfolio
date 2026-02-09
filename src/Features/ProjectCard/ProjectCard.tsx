@@ -2,7 +2,7 @@ import { useInView } from '../UseInView/UseInView'
 
 import './projectCard.scss'
 
-interface Props {
+export interface ProjectCardProps {
     title?: string
     picture?: string
     videoUrl?: string
@@ -16,7 +16,6 @@ interface Props {
     alt3?: string
     url1?: string
     url2?: string
-    hiddenButton?: boolean
     alt?: string
 }
 
@@ -34,9 +33,8 @@ const ProjectCard = ({
     alt3,
     url1,
     url2,
-    hiddenButton,
     alt,
-}: Props) => {
+}: ProjectCardProps) => {
     const[ ref , inView ] = useInView({
         triggerOnce : true,
         threshold: 0.5
@@ -69,25 +67,31 @@ const ProjectCard = ({
                 <p className="card-text">
                     {text}
                 </p>
+                {(logo1 || logo2 || logo3) &&
                     <div className='card-logos'>
-                        { logo1 ? <img className='card-logo'src={logo1} alt={alt1}/> : null }
-                        { logo2 ? <img className='card-logo'src={logo2} alt={alt2}/> : null }
-                        { logo3 ? <img className='card-logo'src={logo3} alt={alt3}/> : null }
+                        { logo1 && <img className='card-logo'src={logo1} alt={alt1}/> }
+                        { logo2 && <img className='card-logo'src={logo2} alt={alt2}/> }
+                        { logo3 && <img className='card-logo'src={logo3} alt={alt3}/> }
                     </div>
+                }
                 <p className="card-tech">
                     {tech}
                 </p>
                 <div className="card-buttons">
-                    <button className={hiddenButton ? "card-button-hidden" : "card-button"}>
+                    {url1 && 
+                    <button className="card-button">
                         <a className="card-button-link" target='_blank' rel='noreferrer' href={url1}>
                             Visiter
                         </a>
                     </button>
+                    }
+                    {url2 && 
                     <button className="card-button">
                         <a className="card-button-link" target='_blank' rel='noreferrer' href={url2}>
                             Code source
                         </a>
                     </button>
+                    }
                 </div>
             </div>
         </div>

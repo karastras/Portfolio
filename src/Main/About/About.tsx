@@ -111,19 +111,19 @@ const About = ({ isShake }: Props) => {
                     Du Hard au Soft:
                 </h3>
                 <p className="about-content-text">
-                    Passionné par le multimédia (cinéma, musique, jeux vidéo, infomatique,...), j'ai commencé il y a + de 10 ans à m'intéresser aux entrailles
+                    Passionné par le multimédia (cinéma, musique, jeux vidéo, informatique, ...), j'ai commencé il y a + de 15 ans à m'intéresser aux entrailles
                     des ordinateurs, le Hardware.
                 </p>
                 <p className="about-content-text">
                     Processeur, carte mère, ram, carte graphique .... ces petits bijoux de technologies n'ont
-                    que très peu de secret pour moi. Le but ultime: un maximum de puissance pour un minimum de bruit, le tout avec
+                    que très peu de secret pour moi. Le but ultime : un maximum de puissance pour un minimum de bruit, le tout avec
                     une petite touche de design. Mais il me manquait quelque chose, d'être créatif derrière un écran. Mais que
-                    faire ??? Graphiste, monteur vidéo, programmeur logiciel, développeur web,...
+                    faire ??? Graphiste, monteur vidéo, programmeur logiciel, développeur web, ...
                 </p>
                 <p className="about-content-text">
                     Après un bilan de compétence, j'ai choisi la voie de développeur web car j'ai toujours eu des affinités avec les systèmes
                     de logiques, un côté créatif que je peux exprimer librement dans mes projets personnels. Par le passé, j'ai créé plusieurs
-                    projets avec des platformes de création "clef-en-main", mais avec une frustration de ne pas comprendre comment fonctionnait
+                    projets avec des plateformes de création "clef-en-main", mais avec une frustration de ne pas comprendre comment fonctionnait
                     en coulisses les pages web.
                 </p>
                 <p className="about-content-text">
@@ -131,14 +131,13 @@ const About = ({ isShake }: Props) => {
                     à l'aide des contenus présents sur le net, ainsi que les différentes communautés et enfin rejoindre une équipe de développement.
                 </p>
                 <p className="about-content-text">
-                    Mes différentes expériences professionnelles m'ont permis d'affiner mes atouts:<br />
+                    Mes différentes expériences professionnelles m'ont permis d'affiner mes atouts :<br />
                     <span className="about-content-important">
-                        Soif de connaissance, adaptabilité, rigueur, organisation, travail en équipe, recherche de challenge et source de propositions
+                        Soif de connaissance, adaptabilité, rigueur, organisation, travail en équipe, recherche de challenge et source de propositions, excellent relationnel client.
                     </span>
-                    &nbsp;sont mes attributs qui seront nécessaires pour un futur emploi de développeur web.
                 </p>
                 <p className="about-content-text">
-                    Ma formation m'a ammené à me spécialiser dans le&nbsp;
+                    Ma formation m'a amené à me spécialiser dans le&nbsp;
                     
                     <span className="about-content-important">
                         Front
@@ -148,7 +147,7 @@ const About = ({ isShake }: Props) => {
                     <br />
 
                    
-                    J'ai également suivis une formation sur la technologie&nbsp;
+                    J'ai également suivi une formation sur la technologie&nbsp;
                     <span className="about-content-important">
                         Back&nbsp;
                         <img className="about-symfonyLogo" src={symfony} alt="React Logo"/>
@@ -160,16 +159,10 @@ const About = ({ isShake }: Props) => {
                     </span>
                     et développer des projets sur les deux pôles.
                 </p>
-                <h3 className="about-content-title">
-                    Géolocalisation:
-                </h3>
-                <p className="about-content-text">
-                    Je suis mobile et ouvert à un emploi où qu'il soit, en France et à l'étranger.<br />
-                    Vous trouverez en bas de page les différents moyens pour me contacter.
-                </p>
-                <p className="about-content-end">
-                    Merci d'avoir pris le temps de découvrir mon portfolio
-                </p>
+                <h3 className="about-content-title">Géolocalisation :</h3>
+                <p className="about-content-text">Alsace - Haut-Rhin</p>
+                <p className="about-content-text">Vous trouverez en bas de page les différents moyens pour me contacter.</p>   
+                <p className="about-content-end">Merci d'avoir pris le temps de découvrir mon portfolio</p>
                 <div className="about-content-picture">
                     <div className="about-content-buttons">
                         <button className={classButtonStart} onClick={start}>

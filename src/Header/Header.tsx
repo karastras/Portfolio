@@ -100,7 +100,7 @@ const Header = ( { enter, entered }: Props ) => {
                         )
                     </p>           
                 </div>
-                <button className={enter ? "header-enter" : "header-button"} onClick={entered} >Go!</button>                
+                {!enter && <button className={"header-button"} onClick={entered} >Go!</button>  }              
                 <div className={enter ? "header-nav" : "header-enter"} >
                    <Burger /> 
                 </div>            

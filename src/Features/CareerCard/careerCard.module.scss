@@ -22,6 +22,26 @@
     max-height: auto;
 }
 
+.hidden{
+    opacity: 0;
+}
+
+.anim2{
+    animation: 1s ease anim2 ;
+}
+@keyframes anim2 {  
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        transform: rotateX(-100deg);      
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media(max-width:1025px){
     .careerCard{
         margin: 3rem 0 1rem 0;
