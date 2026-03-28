@@ -3,7 +3,7 @@ import project from '../../assets/images/project.png'
 
 import styles from './projects.module.scss'
 
-import { ProjectData } from './data.ts';
+import { ProjectData } from './projectData.ts';
 
 const Projects = () => {
     return (

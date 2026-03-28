@@ -14,6 +14,9 @@ import pcDiploma from '../../assets/images/pcDiploma.png'
 import pcStudent from '../../assets/images/pcStudent.png'
 import diplo from '../../assets/images/diplo.jpg'
 
+import { CarrerData } from './carrerData.ts';
+
+
 import styles from './carrer.module.scss'
 
 const Carrer = () => {
