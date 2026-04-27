@@ -1,4 +1,4 @@
-import Carrer from './Career/Carrer'
+import Carrer from './Career/Career'
 import Home from './Home/Home'
 import Projects from './Projects/Projects'
 import About from './About/About'

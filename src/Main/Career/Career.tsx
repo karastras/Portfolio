@@ -1,5 +1,5 @@
-import { useInView } from '../../Features/UseInView/UseInView'
-import CareerCard from '../../Features/CareerCard/CareerCard'
+import { useInView } from '../../Features/UseInView/UseInView.tsx'
+import CareerCard from '../../Features/CareerCard/CareerCard.tsx'
 
 import run from '../../assets/images/run.png'
 import opquast from '../../assets/images/opquast.png'
@@ -10,14 +10,13 @@ import hammer from '../../assets/images/hammer.jpg'
 import afpa from '../../assets/images/afpa.jpg'
 import ikea from '../../assets/images/ikea.jpg'
 import bac from '../../assets/images/bac.png'
-import pcDiploma from '../../assets/images/pcDiploma.png'
 import pcStudent from '../../assets/images/pcStudent.png'
 import diplo from '../../assets/images/diplo.jpg'
 
-import { CarrerData } from './carrerData.ts';
+import { CarrerData } from './careerData.ts';
 
 
-import styles from './carrer.module.scss'
+import styles from './career.module.scss'
 
 const Carrer = () => {
     const [ref, inView] = useInView({
@@ -40,38 +39,24 @@ const Carrer = () => {
                     <div className={styles.itemDate}>
                         07/2021
                     </div>
-                    <CareerCard >
-                        <div className={styles.itemContent}>
-                            <h3 className={styles.itemTitle}>
-                                Titre Professionnel Niveau V (Bac+2)
-                            </h3>
-                            <p className={styles.itemDescription}>
-                                Développeur Web et Web mobile
-                            </p>
-                            <p className={styles.itemDescription}>
-                                Délivré par <a target='_blank' rel='noreferrer' href="https://www.francecompetences.fr/recherche/rncp/31114/">le Ministère du Travail, de l'emploi et de L'insertion</a>
-                            </p>
-                            <img className={styles.imgPcDiploma} src={pcDiploma} alt="avatar dans un ordinateur portable portant un couvre-chef de remise de diplôme et tenant un diplôme à la main avec un sourire" />
-                        </div>
-                        <div className={styles.itemText}>
-                            <h4 className={styles.itemTextTitle}>
-                                Développer la partie front-end d'une application web ou web mobile en intégrant les recommandations de sécurité
-                            </h4>
-                            <ul>
-                                <li>- Réaliser un cahier des charges / Maquetter une application</li>
-                                <li>- Réaliser une interface utilisateur web statique et adaptable</li>
-                                <li>- Développer une interface utilisateur web dynamique</li>
-                            </ul>
-                            <h4 className={styles.itemTextTitle}>
-                                Développer la partie back-end d'une application web ou web mobile
-                            </h4>
-                            <ul>
-                                <li>- Créer une base de données</li>
-                                <li>- Développer les composants d'accès aux données</li>
-                                <li>- Développer la partie back-end d'une application web ou web mobile</li>
-                            </ul>
-                        </div>
-                    </CareerCard>
+                    {
+                        CarrerData.map(data =>
+                            <CareerCard
+                                title={data.title}
+                                description={data.description}
+                                supDescription={data.supDescription}
+                                link={data.link}
+                                linkText={data.linkText}
+                                logo1={data.logo1}
+                                altLogo1={data.altLogo1}
+                                itemTextTitle={data.itemTextTitle}
+                                list1={data.list1}
+                                itemTextTitle2={data.itemTextTitle2}
+                                list2={data.list2}
+                                link2={data.link2}
+                                linkText2={data.linkText2}
+                            />
+                        )}    
                 </div>
                 <div className={styles.item}>
                     <div className={styles.line}>
